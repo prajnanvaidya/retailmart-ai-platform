@@ -1,0 +1,329 @@
+The Supplier Intelligence page should not duplicate Product Analytics or Inventory Intelligence. It should answer one core business question:
+
+"Are our suppliers reliable, profitable, cost-effective, and operationally healthy?"
+
+This page is intended for procurement managers, sourcing teams, supply chain planners, finance teams, operations managers, and executives. It should present supplier performance in a practical way using the available RetailMart dataset while being extensible for future Databricks Genie integration.
+
+Maintain the same dark enterprise theme, typography, spacing, cards, navigation, and reusable components already used throughout the application. Reuse shared components wherever possible and keep calculations inside helper functions rather than inside the UI.
+
+Page Header
+
+Title:
+
+Supplier Intelligence Center
+
+Subtitle:
+
+Enterprise Supplier Performance, Procurement & Vendor Intelligence
+
+Display:
+
+Current Date
+Overall Supplier Health Badge (Excellent / Good / Moderate / Critical)
+Executive Supplier Metrics
+
+Show two rows of business KPIs derived from available supplier and purchase data.
+
+Examples:
+
+Total Suppliers
+Active Suppliers
+Categories Served
+Total Procurement Value
+Average Supplier Rating
+Average Lead Time
+Average Order Fulfillment Rate
+On-Time Delivery %
+Purchase Orders
+Average Purchase Cost
+Preferred Suppliers
+High Risk Suppliers
+Single Source Suppliers
+Supplier Diversity
+
+Only display metrics supported by the available data.
+
+Supplier Health Dashboard
+
+Split into two columns.
+
+Left
+
+Overall Supplier Health
+
+Health Score (0–100)
+Progress Bar
+Status Badge
+Right
+
+Executive Summary
+
+Generate dynamically using helper functions.
+
+Summarize:
+
+Overall supplier performance
+Procurement efficiency
+Operational risks
+Immediate actions
+
+Keep it concise and executive-friendly.
+
+Procurement Intelligence Summary
+Executive Recommendations
+
+Examples:
+
+Negotiate better pricing with top suppliers
+Increase sourcing from reliable suppliers
+Reduce dependency on high-risk vendors
+Consolidate low-volume suppliers
+Develop alternate suppliers for critical products
+Operational Insights
+
+Examples:
+
+Top 10 suppliers account for 65% of procurement spend
+Average lead time is 6.8 days
+On-time delivery is 94%
+Two suppliers have declining performance
+Electronics has the highest supplier concentration
+
+All insights should be data-driven.
+
+Supplier Performance Overview
+
+Provide charts such as:
+
+Procurement Spend by Supplier
+Purchase Orders by Supplier
+Supplier Revenue Contribution
+Supplier Category Distribution
+
+Charts:
+
+Horizontal Bar Chart
+Donut Chart
+Treemap (if supported)
+Supplier Performance Cards
+
+Highlight key suppliers.
+
+Cards may include:
+
+Highest Procurement Supplier
+Most Reliable Supplier
+Fastest Delivery Supplier
+Highest Quality Supplier
+Lowest Cost Supplier
+Most Strategic Supplier
+
+Each card should display:
+
+Supplier Name
+Category
+Spend
+Performance Score
+Business Impact
+Recommended Action
+Supplier Reliability Intelligence
+
+Show operational KPIs such as:
+
+On-Time Delivery
+Late Deliveries
+Lead Time
+Purchase Order Fulfillment
+Supplier Consistency
+Delivery Accuracy
+
+Visualizations:
+
+Delivery Performance Trend
+Lead Time Distribution
+Supplier Ranking
+Procurement Spend Intelligence
+
+Analyze procurement spending.
+
+Include:
+
+Spend by Supplier
+Spend by Category
+Average Purchase Cost
+Procurement Cost Trend
+Top Procurement Categories
+
+Visualizations:
+
+Bar Chart
+Line Chart
+Donut Chart
+
+Generate practical insights such as:
+
+"Top 5 suppliers account for 58% of procurement spend."
+Supplier Dependency Analysis
+
+Identify concentration risks.
+
+Examples:
+
+Single-source products
+Categories dependent on one supplier
+Supplier concentration ratio
+Diversification opportunities
+
+Highlight any suppliers that are critical to business continuity.
+
+Supplier Opportunity Center
+
+Generate practical procurement opportunities.
+
+Examples:
+
+Contract Renegotiation
+Bulk Purchase Opportunity
+Supplier Consolidation
+Alternative Supplier Evaluation
+Strategic Partnership Expansion
+Procurement Cost Reduction
+
+Each opportunity should contain:
+
+Description
+Estimated Savings
+Business Value
+Priority Score
+Recommended Action
+Supplier Risk Intelligence
+
+Focus only on actionable business risks.
+
+Examples:
+
+High Lead Time Risk
+Supplier Dependency
+Cost Escalation Risk
+Low Performance Supplier
+Delivery Delay Risk
+Category Supply Risk
+
+Each risk should include:
+
+Severity
+Probability
+Business Impact
+Mitigation Plan
+
+Avoid artificial risks that cannot be supported by the data.
+
+Supplier Analytics
+
+Provide analytical visualizations that are distinct from other pages.
+
+Examples:
+
+Top 10 Suppliers by Procurement Spend
+Spend vs Performance Bubble Chart
+Lead Time Distribution
+Supplier Score Distribution
+Procurement Trend by Month
+Pareto Analysis of Supplier Spend
+
+Avoid duplicating charts already used in Product Analytics or Customer Intelligence.
+
+Supplier Performance Scorecards
+
+Create executive scorecards for:
+
+Delivery Performance
+Cost Efficiency
+Supplier Reliability
+Quality Performance
+Procurement Efficiency
+Strategic Value
+
+Each scorecard should display:
+
+Score (0–100)
+Performance %
+Progress Bar
+One-line business interpretation
+Executive Decision Center
+
+Display one prioritized executive recommendation.
+
+Include:
+
+Recommended Action
+Business Justification
+Estimated Cost Savings
+Priority
+Confidence Score
+Expected Timeline
+
+The recommendation should be concise and actionable.
+
+AI Procurement Recommendations
+
+Generate intelligent recommendations based on supplier performance.
+
+Examples:
+
+Increase procurement from Supplier A
+Reduce dependency on Supplier B
+Negotiate pricing with Supplier C
+Develop alternate suppliers for Category X
+Shift volume to higher-performing vendors
+
+Recommendations should be rule-based and generated through helper functions, not hardcoded.
+
+Supplier Intelligence Table
+
+Provide a searchable and filterable table.
+
+Filters:
+
+Supplier
+Category
+Performance Rating
+Risk Level
+Procurement Spend
+
+Columns:
+
+Supplier ID
+Supplier Name
+Category
+Products Supplied
+Procurement Spend
+Purchase Orders
+Average Lead Time
+On-Time Delivery %
+Performance Score
+Risk Level
+Supplier Status
+
+Display only business-relevant fields and avoid exposing technical database columns.
+
+Footer Summary
+
+Display:
+
+Supplier Health Summary
+Next Recommended Action
+Navigation Back to Home
+Navigation to Inventory Intelligence
+Refresh Data
+Last Refresh Time
+Total Suppliers
+Procurement Spend
+Database Status
+Development Guidelines
+Reuse existing UI components for consistency.
+Keep all business logic in helper functions.
+Ensure every KPI, chart, recommendation, and scorecard derives from the same dataset so the dashboard presents a coherent business narrative.
+Avoid placeholder features or metrics that cannot be calculated from the available RetailMart data.
+Prioritize readability with concise text, meaningful visualizations, and logical grouping of sections.
+Design the experience to resemble a modern procurement analytics platform used by enterprise retailers, emphasizing actionable insights over decorative elements.
