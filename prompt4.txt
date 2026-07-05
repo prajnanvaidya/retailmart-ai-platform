@@ -1,0 +1,562 @@
+👥 Customer Intelligence
+
+I want you to build Customer Intelligence completely from scratch.
+
+The page currently contains nothing.
+
+This should become an enterprise-grade Customer Analytics and Customer Intelligence dashboard similar in quality and design to the Inventory Intelligence and Sales Forecast Center pages already created.
+
+The objective is to build something that feels like a real CRM analytics platform used by Operations Managers, Business Analysts and CXO executives.
+
+This page must NOT be a simple dashboard with a few charts.
+
+It should tell the complete business story of customers.
+
+Maintain the same design language already used across the application.
+
+IMPORTANT
+
+Do NOT hardcode random values.
+
+Use existing SQL/database functions whenever possible.
+
+If required, create additional helper functions and SQL queries.
+
+If helper functions are needed, place business logic inside utils/helpers.py instead of inside the page.
+
+Keep presentation separate from business logic.
+
+The page should remain ready for future Databricks Genie integration.
+
+Theme
+
+Customer Intelligence Center
+
+Subtitle:
+
+Enterprise Customer Analytics, Segmentation & Loyalty Command Center
+
+Maintain existing design
+
+Follow the exact styling already used in
+
+Home
+Inventory Intelligence
+Sales Forecast Center
+
+Reuse existing components whenever possible
+
+components/
+
+header.py
+cards.py
+charts.py
+alerts.py
+tables.py
+
+Do NOT redesign the application.
+
+Maintain a consistent UI.
+
+Layout
+1. Executive Header
+
+Same style as Inventory and Forecast
+
+Show
+
+Current Date
+
+Overall Customer Health Badge
+
+Excellent
+
+Good
+
+Moderate
+
+Critical
+
+depending on actual customer metrics.
+
+2. Executive Customer KPIs
+
+Two rows of executive metrics.
+
+Examples
+
+Total Customers
+
+New Customers
+
+Repeat Customers
+
+Repeat Rate %
+
+Average Spend
+
+Predicted Spend
+
+Customer Lifetime Value
+
+High Value Customers
+
+At Risk Customers
+
+Average Orders per Customer
+
+Average Basket Value
+
+Customer Growth %
+
+Customer Satisfaction Score (if available)
+
+Retention Rate
+
+Do NOT display meaningless KPIs.
+
+Each KPI should be calculated from available data.
+
+3. Customer Health Dashboard
+
+Exactly like Inventory Health Dashboard.
+
+Left Card
+
+Overall Customer Health
+
+Health Score
+
+0–100
+
+Progress Bar
+
+Health Status Badge
+
+Right Card
+
+Executive Summary
+
+Automatically generated summary using helper business logic.
+
+Example
+
+Customer portfolio remains healthy with a 72% repeat purchase rate and growing average spend. Focus should shift toward increasing retention among medium-value customers while preserving engagement of premium customers.
+
+Below summary
+
+Key Positives
+
+Key Risks
+
+Growth Opportunities
+
+4. Customer Segmentation Overview
+
+This should become the centerpiece of the page.
+
+Visualizations
+
+Customer Cluster Distribution
+
+Pie Chart
+
+Customers by Segment
+
+Bar Chart
+
+Average Spend by Segment
+
+Bar Chart
+
+Revenue Contribution by Segment
+
+Donut Chart
+
+Use actual cluster information already available.
+
+5. Customer Journey Intelligence
+
+Show business interpretation instead of raw numbers.
+
+Examples
+
+Largest Customer Segment
+
+Fastest Growing Segment
+
+Most Valuable Segment
+
+Lowest Spending Segment
+
+Highest Retention Segment
+
+Highest Churn Risk Segment
+
+Each item should explain
+
+Current Situation
+
+Business Impact
+
+Recommended Action
+
+6. Business Intelligence Summary
+
+Two-column layout.
+
+Left
+
+Executive Recommendations
+
+Examples
+
+Increase loyalty rewards
+
+Target medium-value customers
+
+Upsell premium customers
+
+Re-engage inactive customers
+
+Launch festival campaign
+
+Cross-sell opportunities
+
+Right
+
+Operational Insights
+
+Examples
+
+High-value customers contribute 48% revenue
+
+Repeat customers generate 63% of monthly sales
+
+Customer acquisition slowing
+
+Average spend increasing
+
+Customer mix becoming healthier
+
+Generate dynamically.
+
+No hardcoded text.
+
+7. High Value Customer Opportunities
+
+Show business opportunities.
+
+Examples
+
+Premium Customer Expansion
+
+Potential Revenue
+
+Priority Score
+
+Action Required
+
+VIP Campaign
+
+Expected ROI
+
+Priority
+
+Cross Sell Opportunity
+
+Upsell Opportunity
+
+Loyalty Upgrade
+
+This section should feel similar to Opportunity Center in Sales Forecast but customer focused.
+
+8. Customer Risk Intelligence
+
+Examples
+
+High Churn Risk
+
+Inactive Customers
+
+Declining Spend
+
+Low Engagement
+
+Repeat Purchase Drop
+
+Each risk should include
+
+Severity
+
+Business Impact
+
+Mitigation Plan
+
+Priority Score
+
+9. Customer Analytics
+
+Charts section.
+
+Include
+
+Monthly Customer Growth
+
+Repeat Customer Trend
+
+Average Spend Trend
+
+Revenue by Customer Segment
+
+Top Customer Categories
+
+New vs Repeat Customers
+
+Lifetime Value Distribution
+
+Only use charts supported by available data.
+
+Avoid duplicate charts.
+
+10. Customer Performance Scorecards
+
+Create executive scorecards.
+
+Examples
+
+Retention Score
+
+Loyalty Score
+
+Customer Value Score
+
+Growth Score
+
+Customer Health Score
+
+Engagement Score
+
+Each
+
+Score
+
+Performance
+
+Progress Bar
+
+Short explanation
+
+11. Executive Decision Center
+
+Generate one executive recommendation.
+
+Examples
+
+Increase customer retention campaign
+
+Expand premium loyalty
+
+Target inactive customers
+
+Increase cross-selling
+
+Improve customer acquisition
+
+Display
+
+Priority
+
+Business Impact
+
+Expected Benefit
+
+Action Required
+
+This should feel like something a CEO reads.
+
+12. Customer Search
+
+Searchable table.
+
+Allow searching by
+
+Customer Name
+
+Customer ID
+
+Segment
+
+City
+
+Loyalty Level
+
+Store
+
+Email
+
+Display practical customer information.
+
+Not every database column.
+
+13. Customer Intelligence Table
+
+Show meaningful columns.
+
+Examples
+
+Customer ID
+
+Customer Name
+
+Segment
+
+Orders
+
+Lifetime Spend
+
+Predicted Spend
+
+Average Order Value
+
+Loyalty Status
+
+Risk Level
+
+Last Purchase
+
+Retention Score
+
+Avoid technical columns.
+
+14. AI Business Recommendations
+
+Generate dynamic recommendations from helper business logic.
+
+Examples
+
+Launch premium campaign
+
+Increase repeat purchases
+
+Retain at-risk customers
+
+Cross-sell electronics buyers
+
+Festival offers
+
+Personalized coupons
+
+Birthday campaigns
+
+Referral program
+
+Use rule-based business logic.
+
+No hardcoded recommendations.
+
+Future-ready for Genie.
+
+15. Customer Personas
+
+Create attractive cards.
+
+Examples
+
+Premium Customers
+
+Loyal Customers
+
+Regular Buyers
+
+Occasional Buyers
+
+Price Sensitive
+
+At Risk Customers
+
+Each card should contain
+
+Customer Count
+
+Average Spend
+
+Revenue Share
+
+Business Importance
+
+Recommended Strategy
+
+This section should be visually attractive.
+
+16. Footer Summary
+
+Status Summary
+
+Next Executive Action
+
+Back to Home
+
+Navigate to Product Analytics
+
+Refresh Data
+
+Last Refresh Time
+
+Business Logic
+
+Move calculations into helpers.py.
+
+Create functions such as
+
+generate_customer_health()
+
+generate_customer_recommendations()
+
+generate_customer_risk_analysis()
+
+generate_customer_scorecards()
+
+generate_customer_summary()
+
+generate_customer_opportunities()
+
+generate_customer_segments()
+
+Keep the page clean.
+
+Architecture
+
+Data Layer
+
+↓
+
+Business Intelligence Layer
+
+↓
+
+Presentation Layer
+
+Maintain separation.
+
+Future Genie should only replace helper functions.
+
+User Experience
+
+Prioritize readability.
+
+Avoid overcrowding.
+
+Maintain spacing.
+
+Keep cards consistent.
+
+Keep charts balanced.
+
+Avoid repeating the same information in multiple sections.
+
+Every section should answer a different business question.
+
+The page should feel like a premium enterprise CRM dashboard used by companies such as Amazon, Walmart, Reliance Retail, or Target.
+
+The final result should look even more polished than the Sales Forecast page while remaining practical, business-focused, and ready for future Databricks Genie AI integration.
