@@ -1,0 +1,605 @@
+You are a Senior Retail Business Intelligence Architect, Databricks Solution Architect, Data Visualization Expert, Forecasting Specialist and Enterprise Dashboard Designer.
+
+The Home page and Inventory Intelligence page have already been completed.
+
+Now build an enterprise-grade Sales Forecast Center completely from scratch.
+
+This page should become one of the flagship pages of the RetailMart AI Platform.
+
+The design should resemble enterprise forecasting dashboards used by Walmart, Amazon, Target, Reliance Retail or Flipkart.
+
+The objective is that an Operations Manager or Sales Director should immediately understand future revenue, demand trends, seasonal changes and business risks.
+
+This is not a student dashboard.
+
+Avoid toy examples.
+
+Avoid placeholder cards.
+
+Avoid generic charts.
+
+Everything should be based on business KPIs and business intelligence.
+
+Existing Architecture
+
+Keep the existing architecture.
+
+Databricks SQL Warehouse
+
+↓
+
+database.py
+
+↓
+
+Forecast SQL Queries
+
+↓
+
+Business Intelligence Layer
+
+↓
+
+Reusable Components
+
+↓
+
+Forecast Center
+
+Do not modify
+
+database.py
+authentication
+connection
+Home page
+Inventory page
+
+Reuse existing components wherever possible.
+
+If reusable forecast components are missing, create them inside components/.
+
+Business logic belongs inside helpers.py (or another reusable helper module), not inside forecast.py.
+
+Forecast Page Objectives
+
+The page should answer
+
+How much revenue is expected?
+
+How much growth is expected?
+
+Which months have the highest demand?
+
+Are we likely to miss targets?
+
+What products should be stocked?
+
+What operational decisions should management take?
+
+Where are future risks?
+
+What business opportunities exist?
+
+Overall Layout
+
+Professional
+
+Modern
+
+Minimal
+
+Executive Dashboard
+
+Excellent spacing
+
+Consistent with Home page
+
+Consistent with Inventory page
+
+Dark theme
+
+Responsive
+
+No wasted space
+
+Section 1
+
+Executive Forecast Header
+
+Include
+
+Forecast Center
+
+Subtitle
+
+Current Date
+
+Forecast Model Status
+
+Model Last Updated
+
+Confidence Badge
+
+Forecast Horizon
+
+Section 2
+
+Executive KPI Cards
+
+Examples
+
+Predicted Revenue
+
+Forecast Growth %
+
+Predicted Orders
+
+Expected Profit
+
+Forecast Accuracy
+
+Prediction Confidence
+
+Revenue Variance
+
+Demand Index
+
+Use icons.
+
+Use colors.
+
+Include trend indicators.
+
+Section 3
+
+Executive Forecast Health
+
+Create a Forecast Health Score
+
+Example
+
+91 /100
+
+Excellent
+
+Good
+
+Needs Attention
+
+Critical
+
+Calculate using business rules.
+
+Do NOT hardcode.
+
+Section 4
+
+Executive Summary
+
+Business Intelligence Summary
+
+Generate dynamically.
+
+Explain
+
+Revenue outlook
+
+Demand outlook
+
+Risk outlook
+
+Growth outlook
+
+Inventory readiness
+
+Use business rules.
+
+No hardcoded text.
+
+Section 5
+
+Forecast Timeline
+
+Large professional chart.
+
+Monthly Revenue Forecast
+
+Actual Revenue vs Forecast
+
+Confidence Interval
+
+Forecast Band
+
+Prediction Trend
+
+This should become the main visual attraction of the page.
+
+Section 6
+
+Demand Intelligence
+
+Create
+
+Demand Growth
+
+Seasonality
+
+Peak Months
+
+Weak Months
+
+Demand Distribution
+
+Trend Direction
+
+Business Interpretation
+
+Section 7
+
+AI Business Recommendations
+
+Do NOT use an LLM.
+
+Generate recommendations using business logic.
+
+Examples
+
+Increase procurement
+
+Delay procurement
+
+Increase promotions
+
+Reduce inventory
+
+Expand staffing
+
+Increase warehouse capacity
+
+Launch campaigns
+
+Prioritize suppliers
+
+Recommendations should depend on KPIs.
+
+Always dynamic.
+
+Section 8
+
+Opportunity Center
+
+Generate
+
+Growth Opportunities
+
+Revenue Opportunities
+
+Market Opportunities
+
+Category Opportunities
+
+Customer Opportunities
+
+Examples
+
+Electronics forecast to grow 18%
+
+Increase inventory by 12%
+
+Prepare supplier contracts
+
+Increase warehouse staffing
+
+Section 9
+
+Risk Intelligence
+
+Show
+
+Revenue Risk
+
+Demand Risk
+
+Stock Risk
+
+Operational Risk
+
+Supply Risk
+
+Financial Risk
+
+Rank risks by severity.
+
+Display
+
+Impact
+
+Probability
+
+Recommended mitigation
+
+Section 10
+
+Scenario Analysis
+
+Create
+
+Best Case
+
+Expected Case
+
+Worst Case
+
+Display
+
+Revenue
+
+Orders
+
+Growth
+
+Profit
+
+Business interpretation
+
+This should look like an executive planning section.
+
+Section 11
+
+Forecast Analytics
+
+Professional charts
+
+Examples
+
+Revenue Forecast
+
+Monthly Growth
+
+Demand Trend
+
+Forecast Accuracy
+
+Revenue by Month
+
+Orders by Month
+
+Moving Average
+
+Rolling Forecast
+
+Do not overload.
+
+Choose useful charts.
+
+Section 12
+
+Operational Planning
+
+Generate
+
+Procurement Planning
+
+Warehouse Planning
+
+Marketing Planning
+
+Staffing Planning
+
+Financial Planning
+
+Each should contain practical actions.
+
+Section 13
+
+Category Forecast
+
+Forecast
+
+Electronics
+
+Fashion
+
+Groceries
+
+Sports
+
+Beauty
+
+Home & Living
+
+Automotive
+
+Display
+
+Revenue
+
+Growth
+
+Demand
+
+Risk
+
+Opportunity
+
+Section 14
+
+Forecast Details Table
+
+Professional searchable table.
+
+Include
+
+Forecast Month
+
+Revenue
+
+Orders
+
+Growth
+
+Confidence
+
+Status
+
+Variance
+
+Business Note
+
+Search
+
+Sort
+
+Filter
+
+Section 15
+
+Forecast Scorecards
+
+Examples
+
+Forecast Accuracy
+
+Growth Readiness
+
+Demand Confidence
+
+Revenue Confidence
+
+Operational Readiness
+
+Supply Readiness
+
+Professional scorecards with progress bars.
+
+Section 16
+
+Business Intelligence Insights
+
+Generate
+
+Top 5 observations
+
+Top 5 risks
+
+Top 5 opportunities
+
+Top 5 executive recommendations
+
+Dynamic.
+
+Section 17
+
+Executive Decision Center
+
+Display
+
+Today's Executive Decision
+
+Highest Priority
+
+Immediate Action
+
+Business Impact
+
+Expected ROI
+
+Section 18
+
+Footer Summary
+
+Executive Conclusion
+
+Overall Forecast Outlook
+
+Next Business Action
+
+Business Intelligence Layer
+
+Create a Forecast Intelligence Layer similar to the Inventory Intelligence Layer.
+
+Do NOT use hardcoded recommendations.
+
+Build rule-based intelligence from KPIs.
+
+Architecture
+
+Forecast KPIs
+
+↓
+
+Forecast Business Logic
+
+↓
+
+Forecast Intelligence
+
+↓
+
+Forecast Recommendations
+
+↓
+
+UI
+
+The UI must never contain business rules.
+
+Future Genie Compatibility
+
+Design everything so that later the Business Intelligence Layer can simply be replaced with Databricks Genie.
+
+Current
+
+Forecast KPIs
+
+↓
+
+Business Rules
+
+↓
+
+Forecast Recommendations
+
+Future
+
+Forecast KPIs
+
+↓
+
+Databricks Genie
+
+↓
+
+Forecast Recommendations
+
+The UI should not change.
+
+Code Quality
+
+Use reusable functions.
+
+Avoid duplicate code.
+
+Enterprise architecture.
+
+Professional naming.
+
+Small functions.
+
+Clear comments.
+
+Consistent formatting.
+
+Verification Checklist
+
+Before finishing, verify
+
+Enterprise-grade UI
+Consistent with Home page
+Consistent with Inventory page
+No hardcoded recommendations
+Business logic separated from UI
+Dynamic recommendations
+Reusable components created where appropriate
+Ready for future Databricks Genie integration
+Production-quality architecture
