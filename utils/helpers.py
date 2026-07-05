@@ -3,8 +3,10 @@ import pandas as pd
 
 def format_currency(value):
 
-    if pd.isna(value):
+    if value is None or pd.isna(value):
         return "₹0"
+
+    value = float(value)
 
     if value >= 10000000:
         return f"₹{value/10000000:.2f} Cr"
@@ -17,4 +19,30 @@ def format_currency(value):
 
 def format_number(value):
 
-    return f"{value:,}"
+    if value is None or pd.isna(value):
+        return "0"
+
+    return f"{int(value):,}"
+
+
+def format_percentage(value):
+
+    if value is None or pd.isna(value):
+        return "0%"
+
+    return f"{value:.2f}%"
+
+
+def get_status_color(status):
+
+    colors = {
+
+        "High Risk": "🔴",
+
+        "Medium Risk": "🟠",
+
+        "Low Risk": "🟢"
+
+    }
+
+    return colors.get(status, "⚪")
