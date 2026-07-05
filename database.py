@@ -6,6 +6,7 @@ import pandas as pd
 import streamlit as st
 
 from utils.sql_queries import *
+from config import HTTP_PATH
 
 
 # ==========================================================
@@ -24,7 +25,7 @@ def get_connection():
     .replace("https://", "")
     .rstrip("/")
     )
-    http_path = os.getenv("DATABRICKS_HTTP_PATH")
+    http_path = HTTP_PATH
 
     client_id = os.getenv("DATABRICKS_CLIENT_ID")
     client_secret = os.getenv("DATABRICKS_CLIENT_SECRET")
