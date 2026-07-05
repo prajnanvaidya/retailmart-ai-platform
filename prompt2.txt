@@ -1,0 +1,440 @@
+You are a Senior Databricks Solution Architect, Senior Streamlit UI/UX Designer, Retail Business Intelligence Expert, and Analytics Dashboard Designer.
+
+My Home page has already been completed with a Business Intelligence Layer that generates dynamic recommendations from KPIs.
+
+Now I want you to design and implement the Inventory Intelligence page completely from scratch.
+
+This is not a student dashboard.
+
+Design it like an enterprise inventory operations portal used by Walmart, Amazon, Target, Reliance Retail or Flipkart operations managers.
+
+The page should feel professional, modern, interactive and practical.
+
+The objective is that an Inventory Manager should immediately understand inventory health, risks, replenishment priorities and inventory trends without opening another page.
+
+IMPORTANT
+
+Do NOT modify
+
+database.py
+SQL queries
+Business Intelligence Layer
+Home page
+Components that are already working unless absolutely required.
+
+Use the existing helper functions and reusable UI components whenever possible.
+
+If a reusable component is missing and would improve the overall project architecture, create it.
+
+Always prefer reusable components instead of writing UI directly inside inventory.py.
+
+Architecture
+
+Maintain the architecture
+
+Databricks SQL Warehouse
+
+↓
+
+database.py
+
+↓
+
+Inventory Data
+
+↓
+
+Business Logic
+
+↓
+
+Reusable Components
+
+↓
+
+Inventory Intelligence Page
+
+Keep business logic outside UI whenever practical.
+
+Inventory Page Goals
+
+This page should answer:
+
+How healthy is our inventory?
+
+Which products require immediate action?
+
+Which stores are at highest risk?
+
+How much inventory is at risk?
+
+Where should procurement focus today?
+
+What actions should Operations take?
+
+Design Requirements
+
+Design should be premium.
+
+Avoid empty white spaces.
+
+Avoid text-heavy sections.
+
+Proper spacing.
+
+Professional section hierarchy.
+
+Interactive.
+
+Responsive.
+
+Consistent with Home page.
+
+Page Layout
+1.
+
+Professional Header
+
+Inventory Intelligence
+
+Subtitle
+
+One-line description
+
+Current Date
+
+Inventory Health Badge
+
+2.
+
+Executive KPI Cards
+
+Use existing data.
+
+Examples
+
+Total Products
+
+Inventory Value
+
+High Risk Inventory
+
+Medium Risk Inventory
+
+Low Risk Inventory
+
+Low Stock Products
+
+Reorder Required
+
+Inventory Accuracy
+
+Use icons.
+
+Use colors.
+
+Good spacing.
+
+3.
+
+Overall Inventory Health
+
+Professional health summary.
+
+Instead of only
+
+Healthy
+
+Not Healthy
+
+Create a health score.
+
+Example
+
+92 /100
+
+Excellent
+
+Good
+
+Needs Attention
+
+Critical
+
+This score should be calculated from KPIs.
+
+4.
+
+AI / Business Intelligence Summary
+
+Do NOT use LLM.
+
+Use business rules.
+
+Generate
+
+Executive Summary
+
+Risks
+
+Positive observations
+
+Recommended Actions
+
+using business logic.
+
+Use colored alert cards.
+
+5.
+
+Priority Action Center
+
+Instead of static alerts,
+
+Create ranked action cards.
+
+Priority 1
+
+Priority 2
+
+Priority 3
+
+Each should include
+
+Severity
+
+Business impact
+
+Suggested Action
+
+6.
+
+Inventory Risk Dashboard
+
+Professional charts.
+
+Examples
+
+Risk Distribution
+
+Inventory by Category
+
+Stock Gap
+
+Risk by Store
+
+Inventory Status
+
+Choose the most suitable visualizations.
+
+Do not overload.
+
+7.
+
+Inventory Analytics
+
+Create useful operational insights.
+
+Examples
+
+Top Risk Products
+
+Top Overstock Products
+
+Category Performance
+
+Reorder Level Comparison
+
+Store Risk Comparison
+
+Inventory Gap Analysis
+
+8.
+
+Procurement Recommendations
+
+Generate recommendations dynamically.
+
+Examples
+
+Products to procure first
+
+Stores needing replenishment
+
+Categories needing attention
+
+Supplier recommendations
+
+Based on business rules.
+
+9.
+
+Critical Inventory Table
+
+Professional searchable table.
+
+Highlight
+
+High Risk
+
+Low Stock
+
+Large Stock Gap
+
+Conditional formatting if possible.
+
+Allow sorting.
+
+10.
+
+Inventory Performance Scorecards
+
+Examples
+
+Stock Availability
+
+Stock Turnover
+
+Fill Rate
+
+Service Level
+
+Inventory Utilization
+
+Display beautifully.
+
+11.
+
+Operational Insights
+
+Create a small Business Intelligence section.
+
+Examples
+
+"Electronics contributes 45% of current inventory risk."
+
+"South Region accounts for 37% of replenishment demand."
+
+Generate dynamically.
+
+12.
+
+Footer Summary
+
+Short operational conclusion.
+
+Today's overall inventory status.
+
+Next recommended action.
+
+User Experience
+
+Avoid vertical scrolling caused by poor spacing.
+
+Balance tables and charts.
+
+Maintain symmetry.
+
+Professional card sizing.
+
+Interactive.
+
+Clean.
+
+Modern.
+
+No repeated information.
+
+Business Intelligence
+
+Create an Inventory Intelligence Layer similar to Home page.
+
+No hardcoded recommendations.
+
+Recommendations must depend on
+
+High Risk Inventory
+
+Medium Risk
+
+Low Risk
+
+Stock Gap
+
+Low Stock
+
+Category Summary
+
+Store Summary
+
+Inventory Predictions
+
+Always generate practical recommendations.
+
+No generic text.
+
+Code Quality
+
+Keep functions small.
+
+Create reusable helpers.
+
+Avoid duplicated code.
+
+Professional naming.
+
+Clear comments.
+
+Enterprise architecture.
+
+Future Compatibility
+
+Design the page so that the Business Intelligence Layer can later be replaced by Databricks Genie without changing the UI.
+
+Current
+
+Inventory KPIs
+
+↓
+
+Business Rules
+
+↓
+
+Inventory Recommendations
+
+Future
+
+Inventory KPIs
+
+↓
+
+Databricks Genie
+
+↓
+
+Inventory Recommendations
+
+The UI should not change.
+
+Sidebar Navigation
+
+If Streamlit allows it without breaking the project,
+
+restructure the sidebar navigation into the following order:
+
+Home
+Inventory Intelligence
+Customer Intelligence
+Sales Forecast
+Product Analytics
+Supplier Intelligence
+AI Insights
+AI Search
+Reports
+
+If this requires only renaming page files, explain the required filenames.
+
+Do not implement a custom sidebar.
+
+Keep using Streamlit's default multipage navigation.
