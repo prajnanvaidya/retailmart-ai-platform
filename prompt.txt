@@ -1,0 +1,178 @@
+You are a Senior Databricks + Streamlit Architect and Retail Business Intelligence Expert.
+
+I have already completed the Home Dashboard of my RetailMart AI Platform.
+
+The dashboard already loads all KPIs, charts, tables and summaries correctly from Databricks SQL Warehouse.
+
+I DO NOT want to integrate Databricks Genie or any LLM yet.
+
+My current "Recommended Actions" section contains hardcoded recommendation text.
+
+I want to upgrade the project to a proper Business Intelligence Layer that generates recommendations dynamically using business rules based on the actual KPI values returned from SQL.
+
+The goal is to make the application feel like a real enterprise retail analytics platform rather than a student dashboard.
+
+Requirements:
+
+Do NOT change the UI layout of the Home page.
+Do NOT modify any header components.
+Do NOT modify charts.
+Do NOT modify cards.
+Do NOT change SQL queries.
+Do NOT introduce any AI/LLM/Genie calls.
+
+Instead,
+
+Create a dedicated Business Intelligence Layer inside utils/helpers.py (or another helper module if you believe it is architecturally cleaner).
+
+The helper should accept all KPI values from Home page and generate recommendations dynamically.
+
+The recommendations must NOT be random.
+
+They must be derived from actual business rules.
+
+Examples:
+
+Inventory
+
+High Risk Inventory
+Medium Risk Inventory
+Low Stock Products
+Total Products
+
+Customer
+
+Total Customers
+Repeat Customers
+Average Predicted Spend
+Customer Segments
+
+Sales
+
+Revenue
+Orders
+Average Order Value
+
+Forecast
+
+Average Forecast Revenue
+Forecast Trend
+
+Supplier
+
+Active Suppliers
+Supplier Summary
+
+The business logic should resemble how a Retail Operations Manager would think.
+
+Examples of recommendation categories:
+
+Inventory Management
+
+Customer Retention
+
+Revenue Optimization
+
+Procurement
+
+Forecast Planning
+
+Operations
+
+Each recommendation should include
+
+title
+
+recommendation text
+
+priority
+
+severity
+
+recommended action
+
+The logic should contain meaningful thresholds.
+
+Example:
+
+If High Risk Inventory > 50
+
+Critical recommendation.
+
+If between 20 and 50
+
+Warning.
+
+If zero
+
+Positive recommendation.
+
+Do NOT hardcode one recommendation.
+
+Generate recommendations dynamically.
+
+If there are no issues,
+
+generate positive recommendations instead.
+
+The recommendation engine should always return exactly four recommendations so the UI layout remains unchanged.
+
+Example return structure:
+
+[
+    {
+        "title": "...",
+        "recommendation": "...",
+        "severity": "success"
+    },
+    ...
+]
+
+The helper should be easy to extend later with Databricks Genie.
+
+Design it as
+
+Dashboard KPIs
+
+↓
+
+Business Intelligence Layer
+
+↓
+
+UI
+
+NOT
+
+Dashboard
+
+↓
+
+UI
+
+This way I can later replace the Business Intelligence Layer with Genie without changing the Home page.
+
+Update only the necessary code in
+
+utils/helpers.py
+pages/home.py
+
+Do NOT modify any other files unless absolutely necessary.
+
+If helper functions should be split into smaller reusable functions, do that.
+
+Use clean professional architecture.
+
+Avoid duplicated logic.
+
+Write maintainable enterprise-quality code.
+
+Explain every modification before showing the code.
+
+Finally verify that:
+
+the Home page UI remains identical
+only recommendations become dynamic
+no existing functionality breaks
+the recommendation engine is deterministic
+the architecture is ready for future Databricks Genie integration.
