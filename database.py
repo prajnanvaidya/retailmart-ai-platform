@@ -1,12 +1,9 @@
 from databricks import sql
+from databricks.sdk.core import Config, oauth_service_principal
+
+import os
 import pandas as pd
 import streamlit as st
-
-from config import (
-    SERVER_HOSTNAME,
-    HTTP_PATH,
-    ACCESS_TOKEN
-)
 
 from utils.sql_queries import *
 
@@ -18,21 +15,62 @@ from utils.sql_queries import *
 @st.cache_resource
 def get_connection():
     """
-    Creates and caches the Databricks SQL connection.
+    Creates and caches a Databricks SQL connection using the
+    Databricks App Service Principal (OAuth M2M).
     """
 
-    return sql.connect(
-        server_hostname=SERVER_HOSTNAME,
-        http_path=HTTP_PATH,
-        access_token=ACCESS_TOKEN
+    server_hostname = (
+    os.getenv("DATABRICKS_HOST")
+    .replace("https://", "")
+    .rstrip("/")
+    )
+    http_path = os.getenv("DATABRICKS_HTTP_PATH")
+
+    client_id = os.getenv("DATABRICKS_CLIENT_ID")
+    client_secret = os.getenv("DATABRICKS_CLIENT_SECRET")
+
+    if not server_hostname:
+        raise RuntimeError(
+            "DATABRICKS_HOST environment variable not found."
+        )
+
+    if not http_path:
+        raise RuntimeError(
+            "DATABRICKS_HTTP_PATH environment variable not found."
+        )
+
+    if not client_id:
+        raise RuntimeError(
+            "DATABRICKS_CLIENT_ID environment variable not found."
+        )
+
+    if not client_secret:
+        raise RuntimeError(
+            "DATABRICKS_CLIENT_SECRET environment variable not found."
+        )
+
+    sdk_config = Config(
+    host=f"https://{server_hostname}",
+    client_id=client_id,
+    client_secret=client_secret,
     )
 
+    def credentials_provider():
+        return oauth_service_principal(sdk_config)
+
+    return sql.connect(
+        server_hostname=server_hostname,
+        http_path=http_path,
+        credentials_provider=credentials_provider
+    )
 
 # ==========================================================
 # QUERY EXECUTION
 # ==========================================================
 
-@st.cache_data(ttl=300)
+from config import CACHE_TTL
+
+@st.cache_data(ttl=CACHE_TTL)
 def execute_query(query: str) -> pd.DataFrame:
     """
     Executes a SQL query and returns a Pandas DataFrame.
@@ -42,19 +80,22 @@ def execute_query(query: str) -> pd.DataFrame:
 
     cursor = connection.cursor()
 
-    cursor.execute(query)
+    try:
 
-    rows = cursor.fetchall()
+        cursor.execute(query)
 
-    columns = [column[0] for column in cursor.description]
+        rows = cursor.fetchall()
 
-    cursor.close()
+        columns = [col[0] for col in cursor.description]
 
-    return pd.DataFrame(
-        rows,
-        columns=columns
-    )
+        return pd.DataFrame(
+            rows,
+            columns=columns
+        )
 
+    finally:
+
+        cursor.close()
 
 # ==========================================================
 # GENERIC HELPERS

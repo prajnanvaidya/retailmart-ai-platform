@@ -1,22 +1,45 @@
-# config.py
+# ==========================================================
+# RETAILMART AI PLATFORM
+# APPLICATION CONFIGURATION
+# ==========================================================
 
-from dotenv import load_dotenv
-import os
-
-load_dotenv()
-
-# Databricks Connection
-
-SERVER_HOSTNAME = os.getenv("DATABRICKS_SERVER_HOSTNAME")
-HTTP_PATH = os.getenv("DATABRICKS_HTTP_PATH")
-ACCESS_TOKEN = os.getenv("DATABRICKS_TOKEN")
-
-# App
+# ==========================================================
+# APPLICATION
+# ==========================================================
 
 APP_NAME = "RetailMart AI Platform"
 
-THEME_COLOR = "#4F8BF9"
-
 COMPANY_NAME = "RetailMart"
 
+THEME_COLOR = "#4F8BF9"
+
 REFRESH_INTERVAL = 300
+
+
+# ==========================================================
+# UI
+# ==========================================================
+
+DEFAULT_PAGE_TITLE = "RetailMart AI Platform"
+
+DEFAULT_PAGE_ICON = "🛒"
+
+LAYOUT = "wide"
+
+
+# ==========================================================
+# CHARTS
+# ==========================================================
+
+DEFAULT_CHART_HEIGHT = 420
+
+DEFAULT_TABLE_HEIGHT = 400
+
+TOP_N_RECORDS = 10
+
+
+# ==========================================================
+# CACHE
+# ==========================================================
+
+CACHE_TTL = 300
