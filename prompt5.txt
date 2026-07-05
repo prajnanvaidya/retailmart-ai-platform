@@ -1,0 +1,348 @@
+Product Analytics Center
+
+Create a completely new Product Analytics Center from scratch.
+
+The page currently contains no implementation.
+
+The objective is to create an enterprise-grade Product Analytics dashboard used by category managers, merchandising teams, inventory planners, supply chain analysts, pricing teams, and executives.
+
+This page should not duplicate Inventory Intelligence or Sales Forecast. Instead, it should answer the question:
+
+"How are our products performing, and what actions should we take?"
+
+Maintain the same dark theme, layout, spacing, typography, reusable components, and navigation already established in the application. Reuse components from components/ wherever possible (header.py, cards.py, charts.py, alerts.py, tables.py) and keep business logic in utils/helpers.py or SQL helper files. The page must be ready for future Databricks Genie integration, so presentation and business logic must remain separated.
+
+Page Header
+
+Title:
+
+Product Analytics Center
+
+Subtitle:
+
+Enterprise Product Performance, Merchandising & Category Intelligence
+
+Display:
+
+Current Date
+Overall Product Health badge (Excellent / Good / Moderate / Critical)
+Executive Product Metrics
+
+Display two rows of meaningful KPIs calculated from actual data.
+
+Possible KPIs include:
+
+Total Products
+Active Products
+Categories
+Top Selling Products
+Average Product Rating (if available)
+Average Selling Price
+Revenue per Product
+Inventory Turnover
+Gross Margin %
+Fast Moving Products
+Slow Moving Products
+Out of Stock Products
+Overstock Products
+Low Stock Products
+Monthly Product Growth
+Category Growth
+
+Only display metrics supported by the available dataset.
+
+Product Health Dashboard
+
+Two-column layout.
+
+Left
+
+Overall Product Health
+
+Health Score (0–100)
+Progress Bar
+Status Badge
+Right
+
+Executive Summary
+
+Automatically generated using helper functions.
+
+Include:
+
+Key Positives
+Business Risks
+Immediate Opportunities
+
+The summary should read like something prepared for a merchandising director.
+
+Business Intelligence Summary
+
+Left panel:
+
+Executive Recommendations
+
+Examples:
+
+Increase replenishment for fast sellers
+Discontinue consistently underperforming products
+Review pricing strategy
+Improve category assortment
+Launch seasonal promotions
+Bundle complementary products
+
+Right panel:
+
+Operational Insights
+
+Examples:
+
+Top category contributes 42% of revenue
+18 products generate 65% of sales
+Electronics growing fastest
+Clothing category slowing
+Inventory imbalance detected
+
+Generate dynamically.
+
+Category Intelligence
+
+This should be one of the major sections.
+
+Include:
+
+Revenue by Category
+Products by Category
+Average Margin by Category
+Average Selling Price by Category
+Best Performing Category
+Lowest Performing Category
+Fastest Growing Category
+
+Visualizations:
+
+Bar Chart
+Donut Chart
+Treemap (if supported)
+Product Portfolio Intelligence
+
+Create executive cards.
+
+Examples:
+
+Best Selling Product
+Highest Revenue Product
+Highest Margin Product
+Most Returned Product (if available)
+Fastest Growing Product
+Lowest Performing Product
+
+Each card should include:
+
+Product Name
+Revenue
+Units Sold
+Business Impact
+Recommended Action
+Product Lifecycle Intelligence
+
+Visualize products by lifecycle stage.
+
+Examples:
+
+Launch
+Growth
+Mature
+Declining
+
+Display:
+
+Product Count
+Revenue Contribution
+Suggested Action
+Pricing Intelligence
+
+Show practical pricing analytics.
+
+Examples:
+
+Average Selling Price
+Premium Products
+Discounted Products
+Price Distribution
+Revenue by Price Range
+
+Charts:
+
+Histogram
+Box Plot
+Bar Chart
+
+Generate insights such as:
+
+"Premium products contribute 35% of revenue despite only representing 12% of the catalog."
+
+Inventory & Product Performance
+
+Instead of duplicating Inventory Intelligence, focus on the product perspective.
+
+Examples:
+
+Products with Excess Stock
+Products Near Stockout
+Products with High Inventory Turnover
+Dead Stock Products
+Overstock Risk
+High Demand Products
+
+Each recommendation should include:
+
+Impact
+Priority
+Suggested Action
+Product Analytics
+
+Create diverse visualizations.
+
+Examples:
+
+Monthly Product Revenue Trend
+Monthly Units Sold
+Revenue vs Quantity Scatter Plot
+Top 10 Products
+Bottom 10 Products
+Product Revenue Distribution
+Category Comparison
+Pareto Chart (80/20 Revenue Contribution)
+
+Avoid repeating charts already used elsewhere in the application.
+
+AI Product Recommendations
+
+Generate intelligent, rule-based recommendations.
+
+Examples:
+
+Bundle Products A and B
+Increase stock for Product X
+Reduce inventory for Product Y
+Increase price by 5% for premium products
+Launch promotion on slow movers
+Introduce cross-selling campaign
+
+Recommendations should be generated through helper functions and not hardcoded.
+
+Product Opportunity Center
+
+Display opportunity cards such as:
+
+Cross-Sell Opportunity
+Bundle Opportunity
+Premium Pricing Opportunity
+Category Expansion
+Seasonal Promotion
+Supplier Negotiation Opportunity
+
+Each opportunity should include:
+
+Description
+Potential Revenue Impact
+Business Value
+Priority Score
+Recommended Action
+Product Risk Intelligence
+
+Examples:
+
+Overstock Risk
+Low Margin Products
+Declining Sales
+Stockout Risk
+High Return Risk (if data exists)
+Supplier Dependency
+
+Display:
+
+Severity
+Business Impact
+Probability
+Mitigation Plan
+Product Performance Scorecards
+
+Create executive scorecards for:
+
+Sales Performance
+Margin Health
+Inventory Efficiency
+Category Strength
+Product Quality
+Revenue Growth
+
+Each should include:
+
+Score (0–100)
+Performance %
+Progress Bar
+Short executive interpretation
+Executive Decision Center
+
+Generate one prioritized executive recommendation.
+
+Include:
+
+Recommended Action
+Business Justification
+Estimated Revenue Impact
+Priority
+Confidence Score
+Expected Timeline
+
+This section should resemble an executive briefing rather than a simple alert.
+
+Product Search & Intelligence Table
+
+Provide a searchable and filterable table.
+
+Filters:
+
+Category
+Brand (if available)
+Stock Status
+Revenue Range
+Product Status
+
+Columns:
+
+Product ID
+Product Name
+Category
+Price
+Units Sold
+Revenue
+Margin
+Current Stock
+Inventory Status
+Product Health
+Performance Score
+
+Hide technical database fields and present only business-relevant information.
+
+Footer Summary
+
+Display:
+
+Product Status Summary
+Next Recommended Action
+Navigation back to Home
+Navigation to Supplier Intelligence
+Refresh Data
+Last Refresh Time
+Data Rows Loaded
+Database Connection Status
+Development Guidelines
+Reuse existing UI components.
+Keep business logic in helper functions.
+Avoid hardcoded values or duplicate calculations.
+Ensure all KPIs, charts, and recommendations are derived from the same data so the page tells a consistent business story.
+Optimize spacing and readability for an executive dashboard.
+The final result should feel like a modern merchandising analytics platform used by retailers such as Amazon, Walmart, Costco, or Reliance Retail, while remaining practical and implementable using the current RetailMart dataset.
