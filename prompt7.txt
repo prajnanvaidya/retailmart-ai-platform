@@ -1,0 +1,667 @@
+You are a Senior AI Analytics Architect, Business Intelligence Consultant, Enterprise UX Designer, and Executive Dashboard Specialist.
+
+Design an enterprise-grade AI Insights Center for RetailMart.
+
+This page should serve as the central intelligence hub of the platform.
+
+It should NOT duplicate the individual department dashboards.
+
+Instead, it should combine insights from
+
+Sales
+Customer
+Product
+Supplier
+Inventory
+Finance
+Operations
+
+and generate cross-functional business intelligence.
+
+The target audience is
+
+CEO
+
+COO
+
+CFO
+
+CMO
+
+Head of Supply Chain
+
+Business Directors
+
+The page should look like an executive decision center rather than another analytics dashboard.
+
+Use the existing enterprise dark theme.
+
+Avoid unnecessary animations.
+
+Maintain professional spacing and hierarchy.
+
+Primary Goal
+
+The page should answer
+
+What happened?
+
+Why did it happen?
+
+What will happen next?
+
+What should management do?
+
+What is the business impact?
+
+Hero Section
+
+Display
+
+AI Insights Center
+
+Enterprise Decision Intelligence
+
+Today's Business Health
+
+Overall AI Confidence
+
+Last Updated
+
+Business Health Score
+
+Example
+
+Business Status
+
+Excellent
+
+Business Health
+
+92/100
+
+AI Confidence
+
+96%
+
+Executive AI Summary
+
+Generate an AI-written executive summary.
+
+Example
+
+Revenue increased by 8% this week primarily due to Electronics and Automotive sales.
+
+However supplier delays for Home & Living products may create stock shortages within 12 days.
+
+Customer satisfaction has improved while procurement costs have increased by 4%.
+
+Recommended priority is supplier optimization.
+
+Keep it concise.
+
+Like a McKinsey executive briefing.
+
+Enterprise Health Score
+
+Instead of one score,
+
+break it into
+
+Sales
+
+Customer
+
+Inventory
+
+Product
+
+Supplier
+
+Finance
+
+Operations
+
+Each with
+
+Current score
+
+Trend
+
+Color indicator
+
+Today's Critical Business Alerts
+
+Show only important alerts.
+
+Examples
+
+High-priority supplier at risk
+
+Stockout predicted
+
+Revenue decline detected
+
+Profit margin falling
+
+Customer churn increasing
+
+Abnormal return rate
+
+Negative review spike
+
+Each alert should include
+
+Priority
+
+Impact
+
+Recommended action
+
+Affected department
+
+Expected financial impact
+
+Cross Department Intelligence
+
+This is the core section.
+
+Show relationships between departments.
+
+Examples
+
+Supplier delay
+
+↓
+
+Inventory shortage
+
+↓
+
+Product unavailable
+
+↓
+
+Revenue loss
+
+↓
+
+Customer dissatisfaction
+
+Another example
+
+Poor product rating
+
+↓
+
+Lower conversions
+
+↓
+
+Reduced revenue
+
+↓
+
+Marketing campaign recommended
+
+Use cards or flow diagrams.
+
+AI Root Cause Analysis
+
+Instead of showing only problems,
+
+explain WHY.
+
+Examples
+
+Revenue dropped because
+
+Inventory stockouts increased
+
+Supplier delivery delays
+
+Product ratings decreased
+
+Seasonality
+
+Price increase
+
+Customer churn
+
+Every insight should include
+
+Root cause
+
+Confidence
+
+Supporting evidence
+
+Revenue Opportunity Detection
+
+Identify hidden opportunities.
+
+Examples
+
+Increase Electronics inventory
+
+Expand Premium products
+
+Bundle products
+
+Cross-selling
+
+Upselling
+
+Supplier renegotiation
+
+Pricing optimization
+
+Inventory redistribution
+
+Each opportunity should show
+
+Estimated revenue
+
+Difficulty
+
+Priority
+
+Confidence
+
+Cost Saving Opportunities
+
+Examples
+
+Supplier negotiation
+
+Reduce logistics cost
+
+Inventory optimization
+
+Warehouse balancing
+
+Low-margin product removal
+
+Purchase consolidation
+
+Return reduction
+
+Automation opportunities
+
+Show
+
+Potential annual savings
+
+Business impact
+
+Implementation effort
+
+Predictive Intelligence
+
+Instead of historical analytics,
+
+predict
+
+Next week's sales
+
+Inventory shortages
+
+Supplier delays
+
+Demand spikes
+
+Revenue forecast
+
+Profit forecast
+
+Return rate
+
+Customer churn
+
+Each prediction should include
+
+Prediction
+
+Confidence
+
+Reason
+
+AI Recommendations
+
+Unlike department pages,
+
+recommendations here should combine multiple departments.
+
+Example
+
+Increase Automotive inventory because
+
+Sales trend increasing
+
+Supplier reliable
+
+Customer demand rising
+
+Inventory low
+
+Estimated revenue gain ₹2.3 Cr
+
+Another
+
+Replace Supplier X
+
+because
+
+Late deliveries
+
+Low rating
+
+Increasing procurement cost
+
+Inventory delays
+
+Estimated savings ₹80 L
+
+Each recommendation should include
+
+Priority
+
+Expected ROI
+
+Business impact
+
+Timeline
+
+Confidence
+
+Business Opportunity Radar
+
+Show only top opportunities.
+
+Examples
+
+Market expansion
+
+New supplier
+
+Category expansion
+
+Private label
+
+Premium product expansion
+
+Cross-category bundle
+
+Regional expansion
+
+Loyalty campaign
+
+Warehouse optimization
+
+Each card should include
+
+Potential revenue
+
+Implementation complexity
+
+Expected timeline
+
+Enterprise Risk Center
+
+Combine risks across departments.
+
+Examples
+
+Supplier Risk
+
+Inventory Risk
+
+Revenue Risk
+
+Customer Risk
+
+Margin Risk
+
+Demand Risk
+
+Operational Risk
+
+Financial Risk
+
+Each should include
+
+Severity
+
+Probability
+
+Affected departments
+
+Estimated impact
+
+Mitigation
+
+AI What-If Simulator
+
+This is an executive planning tool.
+
+Example simulations
+
+What if supplier cost increases 5%?
+
+What if inventory reduces 15%?
+
+What if demand increases 20%?
+
+What if discount becomes 10%?
+
+What if supplier changes?
+
+Show
+
+Expected revenue
+
+Profit
+
+Inventory
+
+Risk
+
+Customer impact
+
+Do not make it overly complex.
+
+Executive Action Center
+
+Instead of just recommendations,
+
+generate today's action list.
+
+Example
+
+High Priority
+
+Renegotiate Supplier A
+
+Increase Laptop inventory
+
+Reduce Grocery procurement
+
+Launch customer retention campaign
+
+Medium Priority
+
+Review premium pricing
+
+Optimize warehouse allocation
+
+Low Priority
+
+Review supplier contracts
+
+Each action should have
+
+Owner
+
+Department
+
+Due date
+
+Expected impact
+
+AI Business Timeline
+
+Display
+
+Yesterday
+
+Today
+
+Next 7 Days
+
+Next Month
+
+Examples
+
+Yesterday
+
+Revenue increased
+
+Today
+
+Supplier delay
+
+Tomorrow
+
+Inventory risk
+
+Next Week
+
+Demand surge expected
+
+Department Performance Ranking
+
+Rank departments
+
+Sales
+
+Customer
+
+Inventory
+
+Supplier
+
+Finance
+
+Product
+
+Operations
+
+Based on
+
+Health
+
+Growth
+
+Risk
+
+Efficiency
+
+AI Business Chat
+
+Provide a natural language search box.
+
+Examples
+
+Why did profit decrease?
+
+Which supplier is risky?
+
+Why are Electronics performing well?
+
+Show top recommendations.
+
+Do not duplicate the AI Search page.
+
+This should be only a quick executive assistant.
+
+Decision Impact Matrix
+
+Plot
+
+Business Impact
+
+vs
+
+Implementation Effort
+
+Quick Wins
+
+Strategic Projects
+
+Major Investments
+
+Low Priority
+
+KPI Snapshot
+
+Only show enterprise KPIs.
+
+Revenue
+
+Profit
+
+Customer Satisfaction
+
+Inventory Health
+
+Supplier Health
+
+Forecast Accuracy
+
+Operating Margin
+
+Cash Flow
+
+Avoid repeating all department KPIs.
+
+Remove
+
+Do NOT show
+
+Product tables
+
+Customer tables
+
+Supplier tables
+
+Sales tables
+
+Detailed charts already available in department pages
+
+Duplicate KPIs
+
+Duplicate recommendations
+
+Large analytical tables
+
+UI / UX
+
+Use large executive cards.
+
+Use fewer but more meaningful charts.
+
+Reduce scrolling.
+
+Use collapsible sections.
+
+Maintain consistent spacing.
+
+Make important actions visually prominent.
+
+Prioritize readability over chart quantity.
+
+Keep the page focused on decisions, not raw analytics.
+
+Final Deliverable
+
+Generate a practical enterprise AI Insights page that feels like a real Executive Decision Intelligence Center used by Fortune 500 retail companies. Every widget should answer a business question or support a management decision. Avoid gimmicky AI features or redundant analytics already available in department-specific dashboards.
