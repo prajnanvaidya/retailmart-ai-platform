@@ -1,0 +1,293 @@
+Create a professional enterprise-grade Streamlit page called "AI Search".
+
+This page should function as a conversational business intelligence assistant for RetailMart.
+
+The chatbot MUST use the Databricks Genie Space named:
+
+Retail Sales and Inventory Analytics
+
+This Genie Space has already been created and configured. Integrate the chatbot with this existing Genie Space instead of building a new AI model or custom RAG pipeline.
+
+The objective is to allow executives and business users to ask questions in natural language across all business domains including Sales, Products, Customers, Inventory, Suppliers and Procurement.
+
+====================================================
+PAGE DESIGN
+====================================================
+
+Use the same dark modern enterprise theme used throughout the application.
+
+The page should feel similar to Microsoft Copilot, ChatGPT Enterprise or Databricks Genie.
+
+Top Section:
+
+Title:
+AI Search
+
+Subtitle:
+Ask business questions in natural language across RetailMart's enterprise data.
+
+Show a small green badge:
+
+Connected to:
+Retail Sales and Inventory Analytics
+
+Add another badge showing
+
+AI Ready
+
+====================================================
+LAYOUT
+====================================================
+
+Two-column layout.
+
+LEFT SIDEBAR (fixed width)
+
+Conversation History
+
+Show previous chats
+
+New Chat button
+
+Delete Chat button
+
+Rename Chat button
+
+Recent Conversations
+
+Pinned Conversations
+
+Suggested Questions
+
+Examples:
+
+Top 10 products by revenue
+
+Which suppliers require review?
+
+Why did sales decrease last month?
+
+Show inventory shortages
+
+Which customers generated highest revenue?
+
+Compare Electronics and Fashion sales
+
+Products with low ratings
+
+Highest procurement spend suppliers
+
+Average order value by month
+
+Inventory turnover by category
+
+These should autofill the chat input when clicked.
+
+====================================================
+MAIN CHAT AREA
+====================================================
+
+Large conversation window.
+
+User messages appear on the right.
+
+AI messages appear on the left.
+
+Use rounded chat bubbles.
+
+Display timestamps.
+
+Automatically scroll to latest message.
+
+Show typing indicator while waiting for Genie.
+
+Support markdown formatting.
+
+Support bullet lists.
+
+Support tables.
+
+Support code blocks if Genie returns SQL.
+
+Support hyperlinks.
+
+Support expandable sections.
+
+====================================================
+CHAT INPUT
+====================================================
+
+Large input box
+
+Placeholder
+
+Ask anything about sales, products, suppliers, customers, inventory or procurement...
+
+Send button
+
+Enter key sends message.
+
+Shift+Enter creates new line.
+
+====================================================
+AI RESPONSE CARD
+====================================================
+
+Every AI response should display beautifully.
+
+Executive Summary
+
+Key Metrics
+
+Business Insights
+
+Recommendations
+
+Suggested Follow-up Questions
+
+If Genie returns tables, render them using Streamlit dataframe.
+
+If Genie returns markdown, preserve formatting.
+
+If Genie returns SQL, show it inside an expandable "Generated SQL" section.
+
+If Genie returns charts or visualization specifications supported by the API, render them whenever possible.
+
+====================================================
+LOADING EXPERIENCE
+====================================================
+
+Display animated typing indicator.
+
+Show
+
+Analyzing enterprise data...
+
+instead of a spinner.
+
+====================================================
+ERROR HANDLING
+====================================================
+
+If Genie cannot answer,
+
+show
+
+No answer was found from the enterprise data.
+
+Try rephrasing your question.
+
+Provide example questions.
+
+====================================================
+CHAT FEATURES
+====================================================
+
+Allow unlimited follow-up questions in the same conversation.
+
+Maintain conversation context.
+
+Example
+
+User:
+Top selling products
+
+User:
+Only Electronics
+
+User:
+Compare with Fashion
+
+The chatbot should preserve context naturally through the Genie conversation.
+
+====================================================
+QUICK ACTIONS
+====================================================
+
+Above the chat input add chips/buttons:
+
+Sales
+
+Products
+
+Customers
+
+Inventory
+
+Suppliers
+
+Procurement
+
+Profit
+
+Revenue
+
+Margins
+
+Orders
+
+Clicking one inserts it into the input box.
+
+====================================================
+DO NOT
+====================================================
+
+Do not create another dashboard.
+
+Do not duplicate KPI cards from Product, Supplier, Customer or Sales pages.
+
+Do not hardcode business insights.
+
+Do not manually query Delta tables.
+
+Do not implement RAG.
+
+Do not use OpenAI, Gemini, Claude or any external LLM.
+
+Do not generate fake responses.
+
+All answers must come from the connected Databricks Genie Space.
+
+====================================================
+BACKEND
+====================================================
+
+Use the Databricks Apps supported approach to connect to the existing Genie Space.
+
+Use the Genie API / SDK to:
+
+Create conversation
+
+Send prompts
+
+Receive responses
+
+Maintain conversation
+
+Handle follow-up questions
+
+Display returned markdown, tables and SQL correctly.
+
+Keep the Genie Space ID configurable through a configuration variable instead of hardcoding it throughout the code.
+
+====================================================
+UI
+====================================================
+
+The page should look premium and enterprise-ready.
+
+Use clean spacing.
+
+Rounded cards.
+
+Modern typography.
+
+Consistent colors with the rest of the application.
+
+Responsive layout.
+
+Smooth animations.
+
+Professional icons.
+
+The final page should resemble an enterprise AI assistant rather than a basic chatbot.
