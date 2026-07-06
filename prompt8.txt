@@ -1,0 +1,107 @@
+Customer (2)
+
+✅ gold_customer_summary
+
+✅ gold_customer_purchase_summary
+
+Sales (7)
+
+✅ gold_sales_summary
+
+✅ gold_daily_sales
+
+✅ gold_monthly_sales
+
+✅ gold_state_sales
+
+✅ gold_store_sales
+
+✅ gold_top10_store_revenue
+
+✅ gold_bottom10_store_revenue
+Product (3)
+
+✅ gold_product_summary
+
+✅ gold_product_performance
+
+✅ gold_product_category_performance
+
+Inventory (3)
+
+✅ gold_inventory_summary
+
+✅ gold_inventory_metrics
+
+✅ gold_low_stock_products
+
+Procurement (2)
+
+✅ gold_procurement_metrics
+
+✅ gold_order_status_performance
+
+Supplier (4)
+
+✅ gold_supplier_summary
+
+✅ gold_supplier_performance
+
+✅ gold_supplier_dependency
+
+✅ gold_supplier_risk_products
+
+Sales Channel (1)
+
+✅ gold_sales_channel_performance
+
+ML_DB (8 Tables)
+Customer AI
+
+✅ customer_cluster_summary
+
+Reason:
+Business segmentation output.
+
+✅ customer_cluster_predictions
+
+Reason:
+Customer-level predicted segment.
+
+Customer Spend
+
+✅ customer_spend_predictions
+
+Reason:
+Final spend prediction.
+
+✅ customer_prediction_summary
+
+Reason:
+Executive summary of predictions.
+
+Sales Forecast
+
+✅ future_sales_forecast
+
+Reason:
+Time-series forecast output.
+
+Inventory AI
+
+✅ inventory_final_predictions
+
+Reason:
+Final inventory prediction.
+
+✅ inventory_dashboard_summary
+
+Reason:
+Business dashboard for inventory risk.
+
+Dashboard
+
+✅ sales_forecast_dashboard_summary
+
+Reason:
+Business-ready sales forecasting dashboard.
