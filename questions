@@ -1,0 +1,20 @@
+What is total revenue this month?
+Which products generated the highest revenue?
+Who are the top 10 customers by revenue?
+Which suppliers have the lowest ratings?
+Show slow-moving inventory.
+Which category has the highest profit margin?
+Why did revenue decrease this month?
+Which customers are at risk of churn?
+Show procurement spend by supplier.
+Compare Electronics vs Fashion sales.
+What products should be restocked?
+Which warehouses have low inventory?
+Show top-performing sales regions.
+
+For each question, verify:
+
+Does it generate the correct SQL?
+Is the answer correct?
+Does it pick the right tables?
+Does it create sensible visualizations?
