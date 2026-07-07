@@ -1,0 +1,17 @@
+Redesign the RetailMart AI Platform Home page into a modern executive dashboard suitable for senior retail operations managers.
+
+Requirements:
+
+• Keep the dark professional theme.
+• Reduce unnecessary vertical spacing and improve information density.
+• Replace plain KPI numbers with modern KPI cards containing icons, subtle shadows, rounded corners, and trend indicators.
+• Display Total Revenue, Total Orders, Customers, Products, Average Order Value, Low Stock Products, Active Suppliers, and Business Health as responsive KPI cards.
+• Convert Business Health into a colored status badge (Healthy, Warning, Critical) instead of a plain message.
+• Replace the large "Today's Priorities" boxes with compact priority cards showing severity (Critical, High, Medium, Low) using appropriate colors.
+• Redesign AI Recommendations using severity badges (Critical, Warning, Recommendation) instead of identical green banners.
+• Replace long tables on the Home page with only the top 5 records and add "View More" links to navigate to detailed pages.
+• Improve spacing, typography, and alignment for a cleaner enterprise dashboard.
+• Use a consistent color palette with green for healthy metrics, amber for warnings, and red only for critical issues.
+• Add a "Quick Actions" section containing navigation cards for Inventory Intelligence, Forecast Center, Customer Intelligence, Supplier Intelligence, Product Analytics, AI Search, and AI Insights.
+• Improve the dashboard hierarchy so executives immediately notice KPIs, alerts, recommendations, charts, and detailed tables in that order.
+• Keep all existing functionality and data queries unchanged; only improve the layout, styling, responsiveness, and user experience.
