@@ -1,0 +1,332 @@
+Redesign the Inventory Intelligence page to look like a modern enterprise retail inventory command center used by Operations Managers, Supply Chain Managers, and Inventory Analysts.
+
+IMPORTANT
+
+Do NOT modify any backend logic.
+
+Do NOT modify SQL queries.
+
+Do NOT create new calculations.
+
+Do NOT invent KPIs.
+
+Use only data already available in the existing application.
+
+The objective is to improve visual design, business presentation, usability, readability, responsiveness, and executive experience.
+
+--------------------------------------------------
+
+GENERAL DESIGN
+
+Maintain the existing dark theme.
+
+Use consistent spacing.
+
+Use rounded cards.
+
+Use subtle borders.
+
+Use light shadows.
+
+Use consistent typography.
+
+Keep equal spacing between all sections.
+
+Reduce excessive vertical whitespace.
+
+Improve responsiveness.
+
+Avoid horizontal scrolling.
+
+Keep the current sidebar and navigation.
+
+Highlight the active page.
+
+--------------------------------------------------
+
+EXECUTIVE INVENTORY METRICS
+
+Keep the existing KPI cards.
+
+Display them using responsive cards.
+
+Each KPI card should contain:
+
+• icon
+• metric name
+• value
+• short description
+
+Maintain equal height for every KPI.
+
+Do not create new KPIs.
+
+If the metric named "Availability" is actually calculated as Total Stock divided by Reorder Requirement and can exceed 100%, rename it to:
+
+Stock Coverage Ratio
+
+Otherwise leave the existing metric unchanged.
+
+--------------------------------------------------
+
+INVENTORY HEALTH
+
+If the application already computes an Inventory Health Score, retain it.
+
+Do not create a new health score.
+
+Display:
+
+Health Score
+
+Status Badge
+
+(Critical / Warning / Healthy)
+
+Use color only for severity.
+
+Do not use oversized colored backgrounds.
+
+--------------------------------------------------
+
+EXECUTIVE SUMMARY
+
+Keep the executive summary.
+
+Reduce it to three concise sections:
+
+Critical Risks
+
+Positive Indicators
+
+Business Impact
+
+Avoid repeating KPI information already displayed above.
+
+--------------------------------------------------
+
+KEY OBSERVATIONS
+
+Replace the long colored banners with compact alert cards.
+
+Each alert should include:
+
+Severity badge
+
+Title
+
+One-line description
+
+Business impact
+
+Priority level
+
+Use:
+
+Red
+
+Amber
+
+Green
+
+only for severity.
+
+--------------------------------------------------
+
+RECOMMENDED ACTIONS
+
+Keep this section.
+
+Organize actions into:
+
+Immediate Actions
+
+This Week
+
+Strategic Improvements
+
+Each action should display:
+
+Priority icon
+
+Recommended action
+
+Expected business outcome
+
+Business impact
+
+Keep the cards compact.
+
+--------------------------------------------------
+
+OPERATIONAL INSIGHTS
+
+Keep this section.
+
+Display concise business insights only.
+
+Maximum four insight cards.
+
+Avoid repeating information already shown elsewhere.
+
+--------------------------------------------------
+
+PRIORITY ACTION CENTER
+
+Keep this section.
+
+Reduce the height of the cards.
+
+Each priority card should contain:
+
+Priority
+
+Issue
+
+Business Impact
+
+Recommended Action
+
+Expected Result
+
+Use small priority badges instead of large colored banners.
+
+--------------------------------------------------
+
+CHARTS
+
+Keep the existing charts.
+
+Inventory Risk Distribution
+
+High Risk Products by Category
+
+High Risk Products by Store
+
+Current Stock by Category
+
+Maintain consistent chart colors.
+
+Maintain equal chart height.
+
+Improve spacing between charts.
+
+Avoid unnecessary legends where obvious.
+
+--------------------------------------------------
+
+PROCUREMENT INTELLIGENCE
+
+Keep this section.
+
+Display:
+
+Urgent Procurement
+
+Routine Procurement
+
+Category Focus
+
+Store Replenishment
+
+Use compact business cards.
+
+--------------------------------------------------
+
+PERFORMANCE SCORECARDS
+
+If these scores are already calculated by the application, keep them.
+
+Otherwise remove the section.
+
+Do not generate artificial scores.
+
+When available, color progress bars using:
+
+90–100 Green
+
+70–89 Blue
+
+50–69 Orange
+
+Below 50 Red
+
+Display a short interpretation:
+
+Excellent
+
+Good
+
+Needs Attention
+
+Critical
+
+--------------------------------------------------
+
+CRITICAL INVENTORY TABLE
+
+Keep this table.
+
+Improve usability.
+
+Show only the first 10 rows initially.
+
+Enable:
+
+Search
+
+Sorting
+
+Pagination
+
+Filtering
+
+Maintain sticky table headers.
+
+Provide a "View Full Inventory" action if supported.
+
+--------------------------------------------------
+
+CATEGORY SUMMARY TABLE
+
+Keep the category summary.
+
+Improve spacing.
+
+Improve typography.
+
+Allow sorting by any metric.
+
+--------------------------------------------------
+
+REMOVE DUPLICATES
+
+Remove duplicate summary cards that repeat information already shown.
+
+Do not display the same KPI or recommendation multiple times.
+
+--------------------------------------------------
+
+BOTTOM OF PAGE
+
+Remove the duplicate Inventory Status Summary section.
+
+Do not replace it with technical pipeline or backend information.
+
+End the page naturally after the final business section.
+
+--------------------------------------------------
+
+VISUAL STYLE
+
+Use a clean executive dashboard style similar to Databricks Lakeview or Microsoft Power BI.
+
+The dashboard should emphasize executive decision making instead of showing raw reports.
+
+Use whitespace effectively.
+
+Keep the design elegant, modern, compact, and business focused.
+
+Do not add placeholder data or static business statements.
+
+Only display information that already exists in the application's data.
