@@ -1,0 +1,470 @@
+Refine the UI/UX of the Sales Forecast Center to match the visual quality and executive dashboard experience of the redesigned Home page.
+
+IMPORTANT REQUIREMENTS
+
+• Do NOT change any business logic.
+• Do NOT modify SQL queries, forecasting logic, calculations, helper functions, or data processing.
+• Keep the current architecture exactly the same.
+• Continue using all existing reusable components, helpers, charts, cards, alerts and table components wherever possible.
+• This is a UI/UX refinement only.
+
+====================================================
+OVERALL DESIGN
+====================================================
+
+Transform the page into a modern enterprise executive dashboard.
+
+Maintain the existing dark professional theme but improve:
+
+• spacing
+• visual hierarchy
+• consistency
+• typography
+• card styling
+• responsiveness
+• alignment
+
+The page should feel like a Fortune 500 executive analytics dashboard rather than stacked Streamlit sections.
+
+Avoid long vertical layouts whenever possible.
+
+====================================================
+PAGE HEADER
+====================================================
+
+Keep the existing header.
+
+Improve only styling.
+
+• Better spacing.
+• Slightly larger title.
+• Better subtitle styling.
+• Display today's date and forecast health badge aligned consistently.
+• Make the model status cards visually match the KPI cards instead of simple info banners.
+
+====================================================
+FORECAST MODEL STATUS
+====================================================
+
+Instead of three blue Streamlit info boxes,
+
+display them as compact modern status cards:
+
+Forecast Model
+Forecast Accuracy
+Forecast Horizon
+
+Each should have:
+
+• icon
+• title
+• value
+• subtle border
+• hover effect
+• consistent height
+
+====================================================
+EXECUTIVE KPI SECTION
+====================================================
+
+Keep every KPI.
+
+Do not remove any metrics.
+
+Instead improve presentation.
+
+Replace plain metric rows with responsive KPI cards.
+
+Each KPI card should contain
+
+• icon
+• metric title
+• large value
+• small helper text
+• optional trend indicator
+• consistent padding
+• rounded corners
+• subtle shadow
+
+Maintain responsive layout.
+
+====================================================
+FORECAST HEALTH
+====================================================
+
+Keep the existing business logic.
+
+Improve the layout.
+
+Display:
+
+LEFT
+
+Forecast Health Score Card
+
+RIGHT
+
+Executive Summary Card
+
+Within Executive Summary:
+
+replace warning/success lists with compact colored insight cards.
+
+Use:
+
+Green
+Amber
+Red
+
+instead of repetitive Streamlit warning/info/success boxes.
+
+====================================================
+BUSINESS INTELLIGENCE SUMMARY
+====================================================
+
+Current recommendations occupy too much space.
+
+Convert recommendations into compact recommendation cards.
+
+Each recommendation should have
+
+icon
+
+severity badge
+
+short title
+
+single line description
+
+Do the same for Operational Insights.
+
+Avoid repeated blue info banners.
+
+====================================================
+REVENUE FORECAST TIMELINE
+====================================================
+
+Keep existing Plotly chart.
+
+Improve presentation only.
+
+Place chart inside premium dashboard card.
+
+Add above the chart:
+
+Forecast Summary Strip
+
+containing
+
+Highest Forecast
+
+Lowest Forecast
+
+Average Forecast
+
+Confidence
+
+Growth %
+
+This gives executives context before reading the graph.
+
+====================================================
+DEMAND INTELLIGENCE
+====================================================
+
+Keep current chart.
+
+Improve layout.
+
+Right-side Demand Distribution should become modern summary cards instead of stacked colored banners.
+
+Use
+
+Peak Months card
+
+Low Demand card
+
+Each with compact chips instead of large success/info boxes.
+
+====================================================
+AI BUSINESS RECOMMENDATIONS
+====================================================
+
+This section needs major visual improvement.
+
+Replace plain bordered containers with recommendation cards.
+
+Each card should include
+
+icon
+
+title
+
+priority badge
+
+short recommendation
+
+expected business outcome
+
+Use color only on badge.
+
+Avoid large empty white space.
+
+====================================================
+GROWTH OPPORTUNITY CENTER
+====================================================
+
+Current opportunity cards are text heavy.
+
+Improve them into executive cards.
+
+Layout:
+
+LEFT
+
+Description
+
+Business Impact
+
+Recommended Action
+
+RIGHT
+
+Priority Score inside a circular score indicator or highlighted KPI badge.
+
+Reduce unnecessary text spacing.
+
+====================================================
+RISK INTELLIGENCE
+====================================================
+
+Current cards feel repetitive.
+
+Keep logic unchanged.
+
+Display:
+
+Risk Icon
+
+Risk Title
+
+Severity Badge
+
+Impact
+
+Mitigation
+
+Probability
+
+Highlight severity using colored badges only.
+
+Avoid multiple warning containers.
+
+====================================================
+SCENARIO PLANNING
+====================================================
+
+Keep
+
+Best Case
+
+Expected Case
+
+Worst Case
+
+Improve styling.
+
+Each scenario should become an executive comparison card.
+
+Display
+
+Revenue
+
+Orders
+
+Growth
+
+Confidence
+
+Scenario Summary
+
+more compactly.
+
+Expected Case should receive slightly stronger visual emphasis.
+
+====================================================
+FORECAST ANALYTICS
+====================================================
+
+Charts are correct.
+
+Improve only layout.
+
+Place each chart inside consistent dashboard cards.
+
+Ensure equal heights.
+
+Improve chart margins.
+
+====================================================
+OPERATIONAL PLANNING
+====================================================
+
+Keep tabs.
+
+Inside each tab,
+
+replace blue info banners with checklist style action cards.
+
+Each planning action should have
+
+check icon
+
+priority color
+
+department label
+
+====================================================
+DETAILED FORECAST TABLE
+====================================================
+
+Keep full table.
+
+Improve only presentation.
+
+Sticky table header
+
+better spacing
+
+compact search bar
+
+download/export button if already supported
+
+Top border matching dashboard theme.
+
+====================================================
+PERFORMANCE SCORECARDS
+====================================================
+
+These should visually match Home page KPI cards.
+
+Consistent heights.
+
+Better spacing.
+
+Score bars aligned.
+
+Icons aligned.
+
+Use consistent typography.
+
+====================================================
+EXECUTIVE DECISION CENTER
+====================================================
+
+Current red full-width button dominates the page.
+
+Instead
+
+show the executive decision inside a premium highlighted decision card.
+
+Place
+
+Decision
+
+Priority
+
+Score
+
+Category
+
+Action Required
+
+inside the card.
+
+Move "Mark as Reviewed" to the upper-right as a secondary action button.
+
+Avoid using a large red full-width button.
+
+====================================================
+EXTENDED FORECAST
+====================================================
+
+Keep chart.
+
+Place chart inside dashboard card.
+
+Move detailed table into an expandable section below the chart to reduce scrolling.
+
+====================================================
+FOOTER SUMMARY
+====================================================
+
+Replace large alert banners with two compact executive summary cards.
+
+Forecast Status
+
+Next Recommended Action
+
+Keep refresh/navigation buttons aligned horizontally.
+
+====================================================
+GENERAL UI IMPROVEMENTS
+====================================================
+
+Maintain consistent:
+
+border radius
+
+padding
+
+section spacing
+
+card height
+
+icon sizes
+
+font hierarchy
+
+header spacing
+
+chart spacing
+
+container width
+
+Reduce unnecessary vertical scrolling.
+
+Use a balanced two-column layout wherever appropriate.
+
+Avoid oversized text blocks.
+
+Avoid repetitive bordered containers.
+
+Avoid repeated blue info banners.
+
+====================================================
+CONSISTENCY
+====================================================
+
+Match the styling already used on the redesigned Home page.
+
+All cards, badges, KPI blocks, section headers, spacing, colors and typography should feel like one unified RetailMart AI Platform.
+
+====================================================
+IMPORTANT
+
+Keep every existing feature.
+
+Keep every business insight.
+
+Keep every chart.
+
+Keep every table.
+
+Keep every calculation.
+
+Keep every helper.
+
+Keep every reusable component.
+
+Only improve layout, styling, component composition, responsiveness and executive user experience.
