@@ -1,0 +1,558 @@
+You are a Senior Product Designer, Senior Streamlit Developer, Retail Supply Chain Domain Expert and UX Architect.
+
+I have already built an Inventory Intelligence page for my RetailMart AI Platform using Streamlit.
+
+The page is fully functional.
+
+DO NOT rewrite the project from scratch.
+
+DO NOT redesign the entire application.
+
+DO NOT remove existing functionality.
+
+DO NOT change database queries unless absolutely required.
+
+Your job is to improve the Inventory Intelligence page like a real enterprise retail product used by inventory managers, supply chain managers and business executives.
+
+Existing Architecture
+
+The project follows a modular architecture.
+
+inventory_intelligence.py should mainly orchestrate data loading and call reusable UI components.
+
+UI components are stored in
+
+components/
+
+alerts.py
+cards.py
+charts.py
+header.py
+sidebar.py
+tables.py
+
+Business helper functions are inside
+
+utils/helpers.py
+
+Whenever a UI improvement is reusable across multiple pages,
+
+DO NOT implement it directly inside inventory_intelligence.py.
+
+Instead,
+
+move it into the appropriate component file.
+
+Similarly,
+
+business calculations should go inside helpers.py.
+
+Follow the existing architecture.
+
+Existing Page
+
+Current sections include
+
+Header
+Executive KPI Metrics
+Inventory Health Dashboard
+Executive Summary
+Business Intelligence Summary
+Priority Action Center
+Inventory Risk Analytics
+Procurement Intelligence
+Performance Scorecards
+Critical Inventory Table
+Inventory Analytics
+Footer
+
+Everything works.
+
+Do not remove any section.
+
+What I Want
+
+I do NOT want cosmetic improvements only.
+
+I want improvements that make this feel like a professional enterprise inventory management application.
+
+Think like someone building
+
+SAP Inventory
+
+Oracle SCM
+
+Microsoft Dynamics
+
+Blue Yonder
+
+Amazon Supply Chain
+
+Databricks AI Dashboard
+
+Improve User Experience
+
+Improve
+
+navigation
+
+information hierarchy
+
+spacing
+
+visual grouping
+
+section flow
+
+card hierarchy
+
+chart positioning
+
+table readability
+
+responsive layout
+
+executive readability
+
+reduce scrolling fatigue
+
+better use of columns
+
+better KPI ordering
+
+logical progression from
+
+Summary
+
+↓
+
+Risk
+
+↓
+
+Insights
+
+↓
+
+Actions
+
+↓
+
+Analytics
+
+↓
+
+Details
+
+instead of random ordering.
+
+Improve Business Understanding
+
+Think like an Inventory Operations Manager.
+
+Help users answer questions like
+
+Are we healthy?
+
+Where are the biggest risks?
+
+Which stores need action?
+
+Which categories are worst?
+
+What should I do next?
+
+What happens if I don't act?
+
+What procurement should happen today?
+
+Which KPI matters most?
+
+Every section should naturally answer one business question.
+
+Improve Practicality
+
+Avoid dashboards that only show charts.
+
+Instead include practical information like
+
+Top affected stores
+
+Most critical products
+
+Categories needing attention
+
+Stores needing replenishment
+
+Stock coverage
+
+Inventory trend summaries
+
+Risk explanations
+
+Business impact
+
+Action urgency
+
+Business recommendations
+
+Decision support
+
+Improve Executive Dashboard
+
+The first screen should immediately tell an executive
+
+Current Health
+
+Business Risk
+
+Inventory Value
+
+Critical Issues
+
+Immediate Actions
+
+without scrolling much.
+
+Make the first screen useful within 15 seconds.
+
+Improve KPIs
+
+Don't simply show numbers.
+
+Explain them.
+
+Add
+
+tooltips
+
+descriptions
+
+business meaning
+
+health indication
+
+trend if available
+
+threshold colors
+
+status badges
+
+executive interpretation
+
+For example
+
+High Risk
+
+1792
+
+🔴 Requires immediate procurement
+
+instead of only
+
+1792
+
+Improve Charts
+
+Avoid charts that don't help decisions.
+
+Every chart should answer one business question.
+
+Examples
+
+High Risk by Category
+
+Stock by Category
+
+Risk Distribution
+
+High Risk Stores
+
+Reorder Analysis
+
+Safety Stock Distribution
+
+Top Critical Products
+
+Procurement Priority
+
+Store Comparison
+
+If a chart doesn't provide insight,
+
+replace it with something better.
+
+Improve Tables
+
+Tables should be useful.
+
+Support
+
+sorting
+
+search
+
+download
+
+highlighting
+
+conditional formatting
+
+important columns first
+
+freeze useful columns if possible
+
+hide unnecessary IDs
+
+show business-friendly names
+
+Improve Alerts
+
+Current alerts are static.
+
+Improve them into
+
+Business Alerts
+
+Operational Alerts
+
+Executive Alerts
+
+Critical Notifications
+
+Procurement Alerts
+
+Each should clearly explain
+
+Problem
+
+Business Impact
+
+Recommended Action
+
+Priority
+
+Improve AI Insights
+
+Current AI insights are basic.
+
+Improve them into actual business insights.
+
+Instead of
+
+Inventory distributed across 75 stores
+
+Generate something like
+
+Inventory is well distributed across all stores with no significant concentration risk.
+
+or
+
+Home & Living contributes 26% of all high-risk inventory and should be prioritized for replenishment.
+
+Every AI insight should sound like an enterprise BI tool.
+
+Improve Priority Action Center
+
+Instead of only showing cards,
+
+rank actions by
+
+Business Impact
+
+Urgency
+
+Estimated Revenue Risk
+
+Affected Stores
+
+Affected Products
+
+Estimated Procurement Needed
+
+Expected Benefit
+
+Every action should explain why it matters.
+
+Improve Procurement Section
+
+Make it actionable.
+
+Examples
+
+Urgent Procurement
+
+Routine Procurement
+
+Category Procurement
+
+Supplier Suggestions
+
+Store Replenishment
+
+Potential Overstock
+
+Inventory Redistribution
+
+Cross-store Transfers
+
+Improve Inventory Health
+
+The health score should not be just a number.
+
+Break it into factors.
+
+Availability
+
+Risk
+
+Coverage
+
+Reorder Compliance
+
+Stock Balance
+
+Overall Grade
+
+A
+
+B
+
+C
+
+D
+
+F
+
+Show why the score is low.
+
+Improve Performance Scorecards
+
+Each scorecard should explain
+
+What it measures
+
+Why it matters
+
+Target
+
+Current
+
+Interpretation
+
+Recommendation
+
+Improve Visual Design
+
+Without changing the overall theme,
+
+improve
+
+alignment
+
+spacing
+
+consistency
+
+padding
+
+section separation
+
+card sizing
+
+font hierarchy
+
+container usage
+
+icons
+
+visual balance
+
+Avoid clutter.
+
+Make it feel premium.
+
+Component Rules
+
+Whenever multiple pages can reuse something,
+
+move it into
+
+components
+
+Examples
+
+priority cards
+
+health cards
+
+score cards
+
+AI insight cards
+
+recommendation cards
+
+procurement cards
+
+risk cards
+
+status badges
+
+section containers
+
+metric groups
+
+timeline cards
+
+Do NOT duplicate UI code.
+
+Helper Rules
+
+Move reusable business logic into
+
+helpers.py
+
+Examples
+
+health calculation
+
+business summaries
+
+risk calculation
+
+recommendation generation
+
+priority ranking
+
+inventory grading
+
+executive summaries
+
+business insights
+
+Never keep reusable business logic inside the page.
+
+Very Important
+
+Do NOT create unnecessary complexity.
+
+Do NOT over-engineer.
+
+Do NOT change existing architecture.
+
+Do NOT remove working functionality.
+
+Do NOT add fake AI features.
+
+Do NOT invent meaningless KPIs.
+
+Every improvement should solve a real business problem.
+
+Before implementing each improvement, explain
+
+Why the current version can be improved.
+Why your proposed solution is better.
+Which file should be modified (inventory_intelligence.py, a component file, or helpers.py).
+Whether the improvement is reusable across the application.
+
+Implement improvements incrementally while preserving the existing project structure and ensuring the page remains fully functional after every change.
