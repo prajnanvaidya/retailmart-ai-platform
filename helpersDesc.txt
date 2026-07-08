@@ -1,0 +1,204 @@
+Analyze utils/helpers.py and produce a documentation report only.
+
+Do NOT modify any code.
+
+I need to understand the architecture of this file before redesigning the application.
+
+Generate the report in the following format.
+
+1. Overall File Purpose
+
+Briefly explain:
+
+Main responsibility of helpers.py
+Whether it is purely utility functions or also contains business logic
+Whether it mixes UI and business logic
+Approximate number of functions
+Overall architecture
+2. Function Inventory
+
+For EVERY function provide:
+
+Function Name
+
+Purpose (1-2 lines)
+
+Inputs (parameters)
+
+Returns
+
+Used By (which page/module calls it if known)
+
+Category
+
+Choose ONE category:
+
+Business Logic
+KPI Calculation
+Recommendation Engine
+Risk Analysis
+Forecasting
+Customer Analytics
+Inventory Analytics
+Supplier Analytics
+Product Analytics
+Chart Builder
+Data Loader
+Data Formatter
+UI Helper
+Navigation
+General Utility
+Other
+
+Output example:
+
+calculate_inventory_health()
+
+Purpose:
+Calculates overall inventory health score.
+
+Inputs:
+inventory_summary
+
+Returns:
+health_score
+
+Used By:
+inventory_intelligence.py
+
+Category:
+Business Logic
+
+3. Business Logic Summary
+
+List every function responsible for:
+
+KPI calculations
+health scores
+recommendation generation
+executive summaries
+AI insights
+alerts
+forecasting
+customer segmentation
+scorecards
+risk calculations
+procurement suggestions
+
+Explain each in one sentence.
+
+4. Page Dependency Map
+
+Create a mapping like:
+
+Home
+↓
+
+helpers functions used
+
+Inventory Intelligence
+↓
+
+helpers functions used
+
+Sales Forecast
+↓
+
+helpers functions used
+
+Customer Intelligence
+↓
+
+helpers functions used
+
+Supplier Intelligence
+↓
+
+helpers functions used
+
+Product Analytics
+↓
+
+helpers functions used
+
+AI Insights
+↓
+
+helpers functions used
+
+AI Search
+↓
+
+helpers functions used
+
+Reports
+↓
+
+helpers functions used
+
+5. Duplicate Logic
+
+Identify any functions that perform similar work or duplicate calculations.
+
+6. UI Logic Detection
+
+Identify any functions that generate:
+
+HTML
+markdown
+Streamlit components
+Plotly figures
+cards
+tables
+
+Separate these from business logic.
+
+7. Reusable Business Components
+
+List the helper functions that can be reused for:
+
+Executive Summary
+KPI Cards
+Health Score
+Recommendations
+Priority Actions
+Alerts
+Scorecards
+Charts
+Tables
+8. Missing Capabilities
+
+Based ONLY on the existing implementation (do not invent features), identify any business helper functions that are missing but would improve maintainability.
+
+Only recommend reusable helper functions.
+
+Do NOT recommend UI changes.
+
+9. Final Summary
+
+Provide:
+
+Number of functions
+Number of business logic functions
+Number of UI helper functions
+Number of chart functions
+Number of formatting functions
+Number of utility functions
+
+Finally answer:
+
+"Is helpers.py already acting as the application's business logic layer?"
+
+with:
+
+YES
+
+or
+
+PARTIALLY
+
+or
+
+NO
+
+and explain why in 3-5 sentences.
