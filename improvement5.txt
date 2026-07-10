@@ -1,135 +1,256 @@
-Redesign the Customer Intelligence Center into a modern executive customer analytics dashboard while preserving all existing business logic, data queries, helper functions, reusable components, navigation, charts, and calculations.
+Refine the Product Analytics Center into a modern enterprise Product Intelligence dashboard while preserving all existing business logic, SQL queries, reusable components, helper functions, charts, filters, search, navigation, calculations, and backend code.
+
+This is NOT a redesign of the business functionality. It is a UI/UX refinement focused on improving executive usability, information hierarchy, responsiveness, consistency, and visual polish.
 
 Overall Design Goals
-Maintain the same enterprise dark theme used across the Home, Inventory Intelligence, and Sales Forecast pages.
-Follow the existing RetailMart design language, spacing, typography, KPI cards, section headers, scorecards, and status badges already implemented.
-Improve executive readability and information hierarchy instead of adding more content.
-Reduce unnecessary scrolling while keeping all important customer intelligence available.
-Optimize the layout for both a 27-inch monitor and a 14-inch laptop, ensuring responsive column layouts and consistent spacing.
+
+The Product Analytics page should follow the same enterprise design system used throughout the RetailMart AI Platform.
+
+It should look consistent with:
+
+Home
+Inventory Intelligence
+Sales Forecast
+Customer Intelligence
+
+Maintain:
+
+dark professional theme
+modern KPI cards
+consistent spacing
+typography
+rounded cards
+subtle shadows
+consistent icons
+status badges
+responsive grid layout
+
+The dashboard should feel like a premium enterprise BI application rather than a long analytical report.
+
 Executive Header
-
-Keep the existing page header.
-
-Retain:
-
-Customer Intelligence Center
-Subtitle
-Current date
-Customer Health status badge
-
-Match the same visual proportions used in Sales Forecast.
-
-Executive KPI Section
-
-Keep all existing KPIs but redesign them into premium KPI cards.
-
-Display:
-
-Total Customers
-New Customers
-Repeat Customers
-Repeat Rate
-Average Spend
-Predicted Spend
-Customer Lifetime Value
-High Value Customers
-Average Orders
-Customer Growth
-
-Each KPI card should include:
-
-icon
-metric
-label
-optional tooltip
-optional trend indicator
-consistent card height
-equal spacing
-responsive wrapping
-
-Avoid oversized empty areas.
-
-Customer Health Dashboard
-
-Keep this section.
-
-Improve by:
-
-making the Health Score card visually stronger
-aligning Executive Summary vertically
-displaying Risks and Positives as compact alert chips rather than long banners
-keeping only the most important observations visible initially
-Business Intelligence Summary
-
-Retain:
-
-Executive Recommendations
-Operational Insights
-
-Replace long stacked info banners with compact recommendation cards.
-
-Each recommendation should have:
-
-severity icon
-title
-one-line description
-
-Avoid repeating information already shown elsewhere.
-
-Customer Segmentation Overview
 
 Keep:
 
-donut chart
-bar chart
+Product Analytics Center
+subtitle
+current date
+health badge
 
-Improve:
+Improve only spacing and alignment.
 
-larger charts
-equal card heights
-better legends
-improved chart padding
-consistent chart container styling
-Customer Journey Intelligence
+Match the same header proportions used across other pages.
 
-Keep this section.
+Executive Product Metrics
 
-Replace plain metric containers with premium insight cards.
+Retain all KPIs.
 
-Display:
+Display as premium KPI cards.
 
-Largest Segment
-Most Valuable Segment
-Smallest Segment
-
-Each card should contain:
+Include:
 
 icon
-key metric
-short business impact
-recommended action
+title
+value
+optional tooltip
+optional trend indicator
 
-Keep text concise.
+Ensure:
 
-High Value Customer Opportunities
+equal heights
+equal widths
+consistent typography
+responsive wrapping
 
-Keep this section.
+Avoid excessive whitespace.
+
+Product Health Dashboard
+
+Keep:
+
+Product Health Score
+Executive Summary
 
 Improve by:
 
-converting opportunity items into modern opportunity cards
-reducing text density
-displaying Priority Score as a badge instead of isolated metric
+making the health score visually stronger
+reducing text length
+presenting Risks and Positives as compact chips
+highlighting only the most important observations
+Executive Insights
 
-Limit visible opportunities to the most important ones.
+Merge the following into one executive section:
 
-Customer Risk Intelligence
+Business Intelligence Summary
+AI Product Recommendations
+Executive Decision Center
+
+Display:
+
+Executive Recommendations
+
+Show only the three highest priority recommendations.
+
+Each recommendation should contain:
+
+severity badge
+title
+one concise recommendation
+Operational Insights
+
+Display only the five most valuable operational insights.
+
+Avoid long information banners.
+
+Executive Decision
+
+Display only one highlighted decision card containing:
+
+Priority
+Score
+Action Required
+Category
+
+Keep the existing "Mark as Reviewed" action.
+
+This merged section should replace three separate sections to reduce scrolling.
+
+Category Intelligence
+
+Keep:
+
+Revenue Distribution chart
+Category Ranking chart
+
+Below the charts display only three executive category cards:
+
+Best Performing Category
+Underperforming Category
+Category Diversity
+
+Use consistent card heights.
+
+Reduce text.
+
+Product Portfolio Intelligence
 
 Keep this section.
 
-Improve presentation.
+Display only:
 
-Display:
+Best Selling Product
+Highest Revenue Product
+Highest Margin Product
+
+Use compact executive cards.
+
+Each card should contain:
+
+product name
+key metric
+business impact
+recommended action
+
+Avoid long descriptions.
+
+Product Lifecycle Intelligence
+
+Simplify considerably.
+
+Display lifecycle stages as four compact KPI cards:
+
+Launch
+Growth
+Mature
+Star Products
+
+Remove lengthy descriptions.
+
+Keep only:
+
+product count
+revenue
+revenue share
+Pricing Intelligence
+
+Keep both charts.
+
+Improve:
+
+chart sizing
+alignment
+responsiveness
+legends
+
+Display Premium, Mid-tier and Budget Products as three compact summary cards beneath the charts.
+
+Inventory & Product Performance
+
+Keep this section.
+
+Display as four equal cards:
+
+High Demand
+Moderate Demand
+Slow Movers
+Revenue Opportunity
+
+Keep only:
+
+metric
+priority
+action
+
+Avoid unnecessary descriptive text.
+
+Product Analytics Charts
+
+Keep:
+
+Top Products
+Product Performance Map
+Pareto Analysis
+
+Improve:
+
+equal chart heights
+responsive containers
+chart spacing
+legend positioning
+
+Show a compact 80/20 insight badge beneath Pareto Analysis instead of a large banner.
+
+Product Performance Scorecards
+
+Keep all four scorecards.
+
+Ensure:
+
+identical dimensions
+equal spacing
+aligned progress bars
+identical styling used throughout the application
+Product Opportunity Center
+
+Reduce this section significantly.
+
+Display only the three highest priority opportunities.
+
+Each opportunity card should contain:
+
+title
+potential impact
+recommended action
+priority badge
+
+Avoid long paragraphs.
+
+Product Risk Intelligence
+
+Keep this section.
+
+Display risks using executive cards.
+
+Each card should contain:
 
 severity badge
 probability badge
@@ -138,139 +259,88 @@ mitigation
 
 Use color only for severity.
 
-Avoid excessive text.
+Reduce vertical spacing.
 
-Keep the highest severity risks first.
-
-Customer Analytics
+Product Search & Intelligence Table
 
 Keep:
 
-Customer Growth Trend
-New vs Repeat Customers
+search
+filters
+sortable table
 
-Improve:
+Improve usability:
 
-consistent chart sizing
-aligned titles
+align all filters in one row
+sticky table header
+internal table scrolling
+fixed table height
 responsive layout
-identical chart styling used in Sales Forecast
-Customer Performance Scorecards
 
-Keep all four scorecards.
+Do not allow the table to significantly increase page height.
 
-Ensure:
-
-equal height
-equal width
-identical sizing as Sales Forecast scorecards
-consistent progress bars
-identical typography
-Executive Decision Center
-
-Keep exactly one Executive Decision card.
-
-Improve visual emphasis.
-
-Display:
-
-Priority
-Score
-Action Required
-Category
-
-Reduce empty spacing.
-
-Keep the "Mark as Reviewed" button.
-
-AI Business Recommendations
-
-Do not show more than three recommendation cards.
-
-Display in a responsive grid.
-
-Each card should include:
-
-severity indicator
-recommendation title
-concise recommendation
-
-Avoid large paragraphs.
-
-Customer Personas
-
-Keep only the three primary personas:
-
-Regular Customers
-Budget Customers
-High Value Customers
-
-Use compact persona cards.
-
-Each card should contain:
-
-customer count
-average spend
-short strategy
-
-No excessive description.
-
-Customer Intelligence Table
-
-Keep the searchable table.
-
-Improve usability by:
-
-making search bar and filter align horizontally
-sticky header
-responsive height
-limiting visible rows initially
-allowing scrolling inside the table instead of extending the page
-
-This significantly reduces total page length.
-
-Footer Summary
+Footer
 
 Keep:
 
-Customer Status Summary
+Product Status Summary
 Next Action
 Navigation
 Refresh button
 
-Match the Sales Forecast footer styling.
+Match styling used across all RetailMart pages.
 
-Reduce Page Length
-
-This is the most important improvement.
+Information Density
 
 Reduce unnecessary scrolling by:
 
-decreasing excessive vertical margins
-reducing padding between sections
-limiting repeated recommendations
-avoiding repeated business messages
-using compact cards instead of long containers
-using expandable sections only for detailed content if needed
-ensuring charts and tables occupy space efficiently
+reducing vertical padding between sections
+decreasing empty space
+replacing repeated business messages with concise summaries
+converting long text blocks into executive cards
+removing duplicated recommendations
+displaying only the most important information initially
 
-The page should feel executive-focused rather than report-like.
+Use expandable sections only for detailed insights if necessary.
 
-Responsiveness
+Responsive Layout
 
-The page must render cleanly on:
+The page must adapt seamlessly to:
 
-27-inch desktop monitor
-14-inch laptop
-medium-width browser windows
+27-inch desktop monitors
+14-inch laptops
+medium browser widths
 
-KPI cards, charts, tables, and recommendation cards should automatically wrap while maintaining alignment.
+Requirements:
+
+no horizontal scrolling
+responsive card wrapping
+equal card heights
+charts resize proportionally
+consistent spacing at all breakpoints
+Reusability
+
+Continue using the existing shared design system and reusable components.
+
+Reuse:
+
+KPI cards
+chart containers
+scorecards
+alert cards
+tables
+section headers
+helper functions
+
+Only introduce new reusable components when absolutely necessary.
 
 Constraints
-Do not change any SQL queries.
-Do not modify helper functions.
-Do not change business calculations.
-Do not duplicate reusable components.
-Continue using the existing components and utils modules.
-Preserve all navigation, filters, search functionality, charts, and interactions.
-This is purely a UI/UX refinement focused on executive usability, consistency, responsiveness, and maintainability.
+Do NOT change SQL queries.
+Do NOT modify backend logic.
+Do NOT change calculations.
+Do NOT change helper functions.
+Do NOT remove existing functionality.
+Do NOT modify navigation.
+Do NOT duplicate components.
+Preserve all charts, filters, search functionality, and business insights.
+Focus solely on improving UI, UX, responsiveness, information hierarchy, consistency, and executive usability.
