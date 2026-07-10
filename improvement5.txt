@@ -1,0 +1,276 @@
+Redesign the Customer Intelligence Center into a modern executive customer analytics dashboard while preserving all existing business logic, data queries, helper functions, reusable components, navigation, charts, and calculations.
+
+Overall Design Goals
+Maintain the same enterprise dark theme used across the Home, Inventory Intelligence, and Sales Forecast pages.
+Follow the existing RetailMart design language, spacing, typography, KPI cards, section headers, scorecards, and status badges already implemented.
+Improve executive readability and information hierarchy instead of adding more content.
+Reduce unnecessary scrolling while keeping all important customer intelligence available.
+Optimize the layout for both a 27-inch monitor and a 14-inch laptop, ensuring responsive column layouts and consistent spacing.
+Executive Header
+
+Keep the existing page header.
+
+Retain:
+
+Customer Intelligence Center
+Subtitle
+Current date
+Customer Health status badge
+
+Match the same visual proportions used in Sales Forecast.
+
+Executive KPI Section
+
+Keep all existing KPIs but redesign them into premium KPI cards.
+
+Display:
+
+Total Customers
+New Customers
+Repeat Customers
+Repeat Rate
+Average Spend
+Predicted Spend
+Customer Lifetime Value
+High Value Customers
+Average Orders
+Customer Growth
+
+Each KPI card should include:
+
+icon
+metric
+label
+optional tooltip
+optional trend indicator
+consistent card height
+equal spacing
+responsive wrapping
+
+Avoid oversized empty areas.
+
+Customer Health Dashboard
+
+Keep this section.
+
+Improve by:
+
+making the Health Score card visually stronger
+aligning Executive Summary vertically
+displaying Risks and Positives as compact alert chips rather than long banners
+keeping only the most important observations visible initially
+Business Intelligence Summary
+
+Retain:
+
+Executive Recommendations
+Operational Insights
+
+Replace long stacked info banners with compact recommendation cards.
+
+Each recommendation should have:
+
+severity icon
+title
+one-line description
+
+Avoid repeating information already shown elsewhere.
+
+Customer Segmentation Overview
+
+Keep:
+
+donut chart
+bar chart
+
+Improve:
+
+larger charts
+equal card heights
+better legends
+improved chart padding
+consistent chart container styling
+Customer Journey Intelligence
+
+Keep this section.
+
+Replace plain metric containers with premium insight cards.
+
+Display:
+
+Largest Segment
+Most Valuable Segment
+Smallest Segment
+
+Each card should contain:
+
+icon
+key metric
+short business impact
+recommended action
+
+Keep text concise.
+
+High Value Customer Opportunities
+
+Keep this section.
+
+Improve by:
+
+converting opportunity items into modern opportunity cards
+reducing text density
+displaying Priority Score as a badge instead of isolated metric
+
+Limit visible opportunities to the most important ones.
+
+Customer Risk Intelligence
+
+Keep this section.
+
+Improve presentation.
+
+Display:
+
+severity badge
+probability badge
+impact
+mitigation
+
+Use color only for severity.
+
+Avoid excessive text.
+
+Keep the highest severity risks first.
+
+Customer Analytics
+
+Keep:
+
+Customer Growth Trend
+New vs Repeat Customers
+
+Improve:
+
+consistent chart sizing
+aligned titles
+responsive layout
+identical chart styling used in Sales Forecast
+Customer Performance Scorecards
+
+Keep all four scorecards.
+
+Ensure:
+
+equal height
+equal width
+identical sizing as Sales Forecast scorecards
+consistent progress bars
+identical typography
+Executive Decision Center
+
+Keep exactly one Executive Decision card.
+
+Improve visual emphasis.
+
+Display:
+
+Priority
+Score
+Action Required
+Category
+
+Reduce empty spacing.
+
+Keep the "Mark as Reviewed" button.
+
+AI Business Recommendations
+
+Do not show more than three recommendation cards.
+
+Display in a responsive grid.
+
+Each card should include:
+
+severity indicator
+recommendation title
+concise recommendation
+
+Avoid large paragraphs.
+
+Customer Personas
+
+Keep only the three primary personas:
+
+Regular Customers
+Budget Customers
+High Value Customers
+
+Use compact persona cards.
+
+Each card should contain:
+
+customer count
+average spend
+short strategy
+
+No excessive description.
+
+Customer Intelligence Table
+
+Keep the searchable table.
+
+Improve usability by:
+
+making search bar and filter align horizontally
+sticky header
+responsive height
+limiting visible rows initially
+allowing scrolling inside the table instead of extending the page
+
+This significantly reduces total page length.
+
+Footer Summary
+
+Keep:
+
+Customer Status Summary
+Next Action
+Navigation
+Refresh button
+
+Match the Sales Forecast footer styling.
+
+Reduce Page Length
+
+This is the most important improvement.
+
+Reduce unnecessary scrolling by:
+
+decreasing excessive vertical margins
+reducing padding between sections
+limiting repeated recommendations
+avoiding repeated business messages
+using compact cards instead of long containers
+using expandable sections only for detailed content if needed
+ensuring charts and tables occupy space efficiently
+
+The page should feel executive-focused rather than report-like.
+
+Responsiveness
+
+The page must render cleanly on:
+
+27-inch desktop monitor
+14-inch laptop
+medium-width browser windows
+
+KPI cards, charts, tables, and recommendation cards should automatically wrap while maintaining alignment.
+
+Constraints
+Do not change any SQL queries.
+Do not modify helper functions.
+Do not change business calculations.
+Do not duplicate reusable components.
+Continue using the existing components and utils modules.
+Preserve all navigation, filters, search functionality, charts, and interactions.
+This is purely a UI/UX refinement focused on executive usability, consistency, responsiveness, and maintainability.
